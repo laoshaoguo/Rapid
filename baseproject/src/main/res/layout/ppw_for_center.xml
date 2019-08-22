@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tool="http://schemas.android.com/tools"
+        android:layout_width="@dimen/ppw_center_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popwindow"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_25"
+        android:paddingLeft="@dimen/margin_25"
+        android:paddingRight="@dimen/margin_25"
+        android:paddingTop="@dimen/margin_18">
+
+        <TextView
+            android:id="@+id/ppw_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/important_for_content"
+            android:textSize="@dimen/size_sub_title"
+            tool:text="title"/>
+
+        <View
+            android:id="@+id/v_line"
+            style="@style/style_divider_horizontal_light"
+            android:layout_marginBottom="@dimen/margin_34"
+            android:layout_marginTop="@dimen/margin_18"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/ppw_center_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/money_gold_light"
+            android:textSize="@dimen/size_paypop_window"
+            tool:text="4.4"/>
+
+        <TextView
+            android:id="@+id/ppw_center_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_bigger_large"
+            android:layout_marginTop="@dimen/margin_12"
+            android:paddingLeft="@dimen/spacing_small"
+            android:paddingRight="@dimen/spacing_small"
+            android:gravity="center_horizontal"
+            android:lineSpacingMultiplier="@dimen/line_spacing_Multiplier_normal"
+            android:textColor="@color/normal_for_assist_text"
+            android:textSize="@dimen/size_content_assist"
+            tool:text="我不要钱"/>
+
+        <TextView
+            android:id="@+id/ppw_center_item1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/load_more_height"
+            android:background="@drawable/selector_button_corner_solid_big"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_content"
+            tool:text="购买"/>
+
+        <TextView
+            android:id="@+id/ppw_center_item2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/load_more_height"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:background="@drawable/selector_button_corner_ppw_item"
+            android:gravity="center"
+            android:textColor="@color/themeColor"
+            android:textSize="@dimen/size_content"
+            tool:text="返回"/>
+    </LinearLayout>
+</LinearLayout>

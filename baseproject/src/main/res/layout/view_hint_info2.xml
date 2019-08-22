@@ -1,0 +1,38 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/spacing_mid"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:background="@drawable/shape_bg_radus_deepgrey_hintview"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--信息提示:图片和文字-->
+        <!--主要用于收藏/举报/动态发送/内容删除等 操作反馈指示。 文字+图标的展示方式，停留一定时间自动消失-->
+        <ImageView
+            android:id="@+id/iv_hint_img"
+            android:layout_width="@dimen/icon_for_assist_state_small"
+            android:layout_height="@dimen/icon_for_assist_state_small"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_mid_small"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:src="@mipmap/msg_box_remind"/>
+
+        <TextView
+            android:id="@+id/tv_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:text="@string/send_fail"
+            android:textColor="@color/general_for_hint"
+            android:textSize="@dimen/size_icon_assist"/>
+    </LinearLayout>
+</FrameLayout>

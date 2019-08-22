@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_gallery_photo"
+    android:background="@android:color/transparent"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_image_contaienr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_orin_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/iv_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                />
+        </FrameLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/pb_progress"
+        android:padding="@dimen/loading_padding"
+        android:layout_width="@dimen/frame_load_round_size"
+        android:layout_height="@dimen/frame_load_round_size"
+        android:visibility="gone"
+        android:background="@drawable/round"
+        android:src="@drawable/frame_loading_white"
+        android:layout_gravity="center"
+       />
+
+    <ImageView
+        android:id="@+id/iv_gif_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ico_lock"
+        android:visibility="gone"/>
+
+    <!--查看全屏-->
+    <TextView
+        android:id="@+id/tv_origin_photo"
+        android:layout_width="@dimen/origin_btn_width"
+        android:layout_height="@dimen/origin_btn_height"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/spacing_bigger_large"
+        android:background="@drawable/shape_bg_button_see_origin_photo"
+        android:gravity="center"
+        android:text="@string/see_origin_photo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_content_assist"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_toll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/spacing_normal_large"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_to_pay"
+            android:layout_width="@dimen/dynamic_img_payto_look_width"
+            android:layout_height="@dimen/dynamic_img_payto_look_height"
+            android:background="@drawable/selector_button_corner_solid_big"
+            android:gravity="center"
+            android:text="@string/see_origin_photo_pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_content_assist"/>
+
+        <TextView
+            android:id="@+id/tv_to_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_mid"
+            android:autoLink="all"
+            android:gravity="center"
+            android:text="@string/see_origin_photo_vip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_content_assist"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</FrameLayout>

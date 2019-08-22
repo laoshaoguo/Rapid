@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+	package
+		ADDED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:18:11-53
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+		ADDED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+		ADDED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:1-20:12
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml:17:11-69
+uses-sdk
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+		ADDED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+		ADDED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml
+		INJECTED from /Users/gaoquanyue/Downloads/HaoHaiMusic/link-library/src/main/AndroidManifest.xml

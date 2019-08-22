@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--######################### 分割线 ##########################-->
+    <!-- 分隔线水平-->
+    <style name="style_divider_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_line</item>
+        <item name="android:background">@color/general_for_line</item>
+    </style>
+    <!-- 分隔线水平 浅色-->
+    <style name="style_divider_horizontal_light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_line</item>
+        <item name="android:background">@color/general_for_line_light</item>
+    </style>
+    <!-- 分隔线垂直-->
+    <style name="style_divider_veitical">
+        <item name="android:layout_width">@dimen/divider_line</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/general_for_line</item>
+    </style>
+    <!-- 分隔线垂直 浅色-->
+    <style name="style_divider_veitical_light">
+        <item name="android:layout_width">@dimen/divider_line</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/general_for_line_light</item>
+    </style>
+    <!--######################## 编辑框 ############################-->
+    <!-- 输入框外层背景 -->
+    <style name="style_edit_white_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_line_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 登录注册输入框-->
+    <style name="style_edit" parent="style_edit_cursor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_normal</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/size_content</item>
+        <item name="android:textColor">@color/important_for_content</item>
+        <item name="android:paddingRight">@dimen/spacing_mid</item>
+    </style>
+    <!-- 密码输入框-->
+    <style name="style_passward_edit" parent="style_edit">
+        <item name="android:maxLength">@integer/password_maxlenght</item>
+    </style>
+
+    <style name="style_edit_bg_line" parent="style_edit_cursor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/size_content_assist</item>
+        <item name="android:textColor">@color/important_for_content</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
+        <item name="android:paddingLeft">@dimen/spacing_small</item>
+        <item name="android:drawableBottom">@drawable/selector_editext_bg_line</item>
+        <item name="android:drawablePadding">@dimen/spacing_small</item>
+        <item name="android:maxLines">@integer/max_lines</item>
+    </style>
+    <!-- 输入框游标 -->
+    <style name="style_edit_cursor">
+        <item name="android:textColorHint">@color/general_for_hint</item>
+        <item name="android:textCursorDrawable">@drawable/shape_cursor_drawable</item>
+    </style>
+    <!--#########################################      文字       ################################-->
+
+    <!-- 登录注册文字-->
+    <style name="style_small_text">
+        <item name="android:layout_width">@dimen/edit_lefttext_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_content</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_mid</item>
+        <item name="android:textColor">@color/important_for_content</item>
+    </style>
+
+    <!-- 修改密码页面的文字 -->
+    <style name="style_change_password_text" parent="style_small_text">
+        <item name="android:layout_width">@dimen/edit_lefttext_width_change_password</item>
+    </style>
+    <!-- 修改密码页面的文字 -->
+    <style name="style_bind_account_text" parent="style_small_text">
+        <item name="android:layout_width">@dimen/edit_lefttext_width_bind_account</item>
+    </style>
+
+    <!--###################### 按钮 ################################-->
+
+    <!--继承自没有阴影的按钮style，如果需要阴影，取消parent-->
+    <style name="style_login_button" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_login_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_mid</item>
+        <item name="android:layout_marginRight">@dimen/spacing_mid</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_button_corner_solid_big</item>
+        <item name="android:textSize">@dimen/size_primary_title</item>
+    </style>
+
+    <style name="style_action_list_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/action_button_list_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/important_for_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/button_text_size_big</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="style_tip_action_list_item">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/action_button_list_item_height</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="style_action_tip_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">@dimen/action_button_list_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/important_for_content</item>
+        <item name="android:textSize">@dimen/button_text_size_big</item>
+    </style>
+
+    <style name="style_action_tip">
+        <item name="android:layout_width">@dimen/chat_message_bottom_tip_size</item>
+        <item name="android:layout_marginTop">@dimen/spacing_mid_small</item>
+        <item name="android:layout_height">@dimen/chat_message_bottom_tip_size</item>
+        <item name="android:background">@drawable/shape_dot_red</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--#########################################      popwindow       ################################-->
+
+    <style name="style_actionPopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="style_actionPopupAnimation_revert" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_from_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/slide_from_top_quit</item>
+    </style>
+
+
+    <!--#########################################      加载样式       ################################-->
+
+    <!-- 加载滚动条样式 -->
+    <style name="style_loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/frame_loading_grey</item>
+        <item name="android:indeterminateDuration">500</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+</resources>

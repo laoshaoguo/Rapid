@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="@dimen/toolbar_with_tab_height"
+    android:titleMargin="0dp"
+    tools:ignore="UnusedAttribute">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--底部分割线，指示器覆盖在它的上面-->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line"
+            android:layout_gravity="bottom"
+            android:background="@color/general_for_line"/>
+        <!--用于viewpager页面切换的tab选项卡-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_with_tab_height"
+            android:background="@android:color/transparent">
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/mg_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/tv_toolbar_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/toolbar_padding_left"
+                android:paddingRight="@dimen/toolbar_padding_right"
+                android:textColor="@color/important_for_content"
+                android:textSize="@dimen/toolbar_left_text_size"
+                android:visibility="gone"
+                tools:text="左边"
+                />
+
+            <TextView
+                android:layout_marginBottom="@dimen/spacing_tiny"
+                android:id="@+id/tv_toolbar_right_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_toolbar_right"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:visibility="gone"
+                android:drawablePadding="@dimen/spacing_small"
+                android:paddingLeft="@dimen/toolbar_padding_left"
+                android:textColor="@color/selector_theme_color_toolbar_text_color"
+                android:textSize="@dimen/toolbar_right_text_size"
+                tools:text="右边"
+                />
+
+            <TextView
+                android:layout_marginBottom="@dimen/spacing_tiny"
+                android:id="@+id/tv_toolbar_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="@dimen/toolbar_padding_right"
+                android:paddingLeft="@dimen/spacing_mid"
+                android:textColor="@color/selector_text_color"
+                android:textSize="@dimen/toolbar_right_text_size"
+                android:visibility="gone"
+                tools:text="右边"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <!--shape是用来定义形状的，gradient定义该形状里面为渐变色填充，startColor起始颜色，endColor结束颜色，angle表示方向角度。当angle=0时，渐变色是从左向右。 然后逆时针方向转，当angle=90时为从下往上, 取值integer，且必须是45的倍数，默认是0，0表示从左到右渐变，45表示从左下到右上，90表示从下到上,135 右下到左上，180 从右到左，225 右上左下， 270 上下 ，315 左上右下 ，360同 0-->
+    <gradient
+        android:angle="45"
+        android:endColor="#de0b0b"
+        android:startColor="#ffffff"
+        android:type="linear"
+        />
+
+    <corners android:radius="30dp"/>
+    <size
+        android:width="100dp"
+        android:height="30dp"/>
+</shape>

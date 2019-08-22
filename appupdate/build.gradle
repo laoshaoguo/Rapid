@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    def gConfig = rootProject.extensions.getByName("ext")
+    compileSdkVersion gConfig["compileSdkVersion"]
+    buildToolsVersion gConfig["buildToolsVersion"]
+    resourcePrefix "versionchecklib"
+    defaultConfig {
+        minSdkVersion gConfig["minSdkVersion"]
+        targetSdkVersion gConfig["targetSdkVersion"]
+        versionCode gConfig["versionCode"]
+        versionName gConfig["versionName"]
+        testInstrumentationRunner gConfig.testDependencies.androidJUnitRunner
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        // if true, only report errors.
+        ignoreWarnings true
+    }
+
+}
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:appcompat-v7:27.0.0'
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    def dataDependences = rootProject.ext.dataDependencies
+    def testDependences = rootProject.ext.testDependencies
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation testDependences.junit
+    implementation dataDependences.markdownView
+    implementation project(":baseproject")
+
+}

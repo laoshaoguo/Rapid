@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <stroke
+        android:width="@dimen/spacing_big_line"
+        android:color="@color/general_for_line"/>
+    <!-- 纯色 -->
+    <solid android:color="@color/bgColor"/>
+</shape>

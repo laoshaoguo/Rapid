@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      tsp 间距定义       ################################-->
+
+    <dimen name="spacing_huge_100">100dp</dimen>
+    <dimen name="spacing_huge_60">60dp</dimen>
+    <dimen name="spacing_bigger_large_58">58dp</dimen>
+    <dimen name="spacing_huge">50dp</dimen>
+    <dimen name="spacing_bigger_large_48">48dp</dimen>
+    <dimen name="spacing_bigger_large">40dp</dimen>
+    <dimen name="spacing_bigger_large_35">35dp</dimen>
+    <dimen name="spacing_big_large">30dp</dimen>
+    <dimen name="spacing_normal_large">25dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_mid">15dp</dimen>
+    <dimen name="spacing_mid_offset">13dp</dimen>
+    <dimen name="spacing_normal_8dp">8dp</dimen>
+    <dimen name="spacing_normal">10dp</dimen>
+    <dimen name="spacing_mid_small">7dp</dimen>
+    <dimen name="spacing_mid_small_8dp">8dp</dimen>
+    <dimen name="spacing_mid_small_9dp">9dp</dimen>
+    <dimen name="spacing_mid_small_6dp">6dp</dimen>
+    <dimen name="spacing_small">5dp</dimen>
+    <dimen name="spacing_small_4dp">4dp</dimen>
+    <dimen name="spacing_small_3dp">3dp</dimen>
+    <dimen name="spacing_small_1dp">1dp</dimen>
+    <dimen name="spacing_tiny">2dp</dimen>
+    <dimen name="spacing_big_line">1dp</dimen>
+    <dimen name="spacing_line">@dimen/divider_line</dimen>
+
+    <!--#########################################      分割线       ################################-->
+
+    <dimen name="divider_line">0.5dp</dimen>
+    <dimen name="edittext_line">0.5dp</dimen>
+
+    <!--#########################################      行间距       ################################-->
+
+    <!--
+    c. 1.0倍行间距
+    一般用于在输入框中输入大量文字，有折行的情况。例如：发布评论时输入框中
+    输入多行文字时。
+    除了a、c中的情况及其他特殊情况外，其他时候均按1.3倍行间距处理。
+    -->
+
+    <!--
+    b.  一定行数的文字采用此间距，是文字内容看起来紧凑。例如：
+    动态列表的动内容;
+    个人中心和个人主页的简介；
+    聊天详情页的聊天内容；
+
+    -->
+    <item name="line_spacing_Multiplier_normal" format="float" type="dimen">1.3</item>
+    <!--
+    a. 有大段落的文字出现的情况，此时需要稍大的行间距，利于阅读。例如：
+    动态详情页；
+    文章详情页；
+    资讯详情页；音乐播放歌词内容等。
+    伟哥说的改小
+    -->
+    <item name="line_spacing_Multiplier_big" format="float" type="dimen">1.5</item>
+    <!--#########################################      tsp 间距定义       ################################-->
+
+</resources>

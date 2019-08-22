@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <!-- 纯色 -->
+    <solid android:color="@color/general_for_line_light"/>
+    <stroke
+        android:width="@dimen/spacing_tiny"
+        android:color="@color/white"/>
+    <size
+        android:width="@dimen/headpic_for_user_home"
+        android:height="@dimen/headpic_for_user_home"
+        />
+</shape>

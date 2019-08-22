@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  圆角  -->
+    <dimen name="button_corner_huge">100dp</dimen>
+    <dimen name="button_corner_big">6dp</dimen>
+    <dimen name="button_corner_large">10dp</dimen>
+    <dimen name="advert_corner_large">14dp</dimen>
+    <dimen name="button_corner_small">4dp</dimen>
+    <dimen name="button_corner_small_3dp">3dp</dimen>
+    <dimen name="button_corner_tiny">2dp</dimen>
+    <!-- 文字大小  -->
+    <dimen name="button_text_size_big">@dimen/size_sub_title</dimen>
+    <dimen name="button_text_size_small">@dimen/size_content_assist</dimen>
+    <!-- button 大小-->
+    <dimen name="button_send_with">45dp</dimen>
+    <dimen name="button_send_height">25dp</dimen>
+    <!-- 描边 -->
+    <dimen name="button_stroke_width">1dp</dimen>
+
+    <!--关注按钮-->
+    <dimen name="button_follow_width">62dp</dimen>
+    <dimen name="button_follow_margin_5dp">5dp</dimen>
+    <dimen name="button_follow_margin_10dp">10dp</dimen>
+
+</resources>

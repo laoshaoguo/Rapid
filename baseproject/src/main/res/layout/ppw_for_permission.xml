@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_permission_name"
+        style="@style/style_action_list_item"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingBottom="@dimen/spacing_mid"
+        android:paddingLeft="@dimen/spacing_mid"
+        android:paddingRight="@dimen/spacing_mid"
+        android:paddingTop="@dimen/spacing_normal_large"
+        tools:text="相机权限设置"/>
+
+    <TextView
+        android:id="@+id/tv_pop_item1"
+        style="@style/style_action_list_item"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:paddingBottom="@dimen/spacing_normal_large"
+        android:paddingLeft="@dimen/spacing_mid"
+        android:paddingRight="@dimen/spacing_mid"
+        android:textColor="@color/normal_for_assist_text"
+        android:textSize="@dimen/size_content"
+        tools:text="@string/setting_permission_hint"
+        />
+
+    <TextView
+        android:id="@+id/tv_pop_item2"
+        style="@style/style_action_list_item"
+        android:layout_marginTop="@dimen/spacing_small"
+        tools:text="@string/choose_from_camera"
+        />
+
+    <TextView
+        android:id="@+id/tv_pop_item3"
+        style="@style/style_action_list_item"
+        android:layout_marginTop="@dimen/spacing_line"
+        tools:text="@string/choose_from_camera"
+        />
+
+    <TextView
+        android:id="@+id/tv_pop_bottom"
+        style="@style/style_action_list_item"
+        android:layout_marginTop="@dimen/spacing_line"
+        tools:text="@string/cancel"
+        />
+</LinearLayout>
+

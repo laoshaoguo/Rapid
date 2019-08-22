@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      重要的颜色       ################################-->
+
+    <!--
+    主题色-需要特别强调的文字、icon、按钮:
+    例如底部导航栏高亮按钮、顶部标题栏右侧可点击状态文字按钮
+    、文章标题、填充类色块按钮、粉丝/点赞/关注/喜欢数 等
+    -->
+    <color name="update_theme_color">#59b6d7</color>
+    <!--&lt;!&ndash;-->
+    <!--重要的列表标题文字、正文内容:-->
+    <!--例如标题栏标题、个人中心类列表项文字、用户昵称、聊天详情页聊天内容-->
+    <!--、弹窗内重要文字、详情页正文文字 等-->
+    <!--&ndash;&gt;-->
+    <!--<color name="important_for_content">#333333</color>-->
+    <!--&lt;!&ndash;-->
+    <!--少量使用-点赞心形图标高亮、新消息提示、警告-->
+    <!--&ndash;&gt;-->
+    <!--<color name="important_for_note">#f4504d</color>-->
+
+    <!--&lt;!&ndash;#########################################    普通的颜色         ################################&ndash;&gt;-->
+
+    <!--&lt;!&ndash;-->
+     <!--首页 动态列表 动态内容文字-->
+       <!--&ndash;&gt;-->
+    <!--<color name="normal_for_dynamic_list_content">#666666</color>-->
+    <!--&lt;!&ndash;-->
+    <!--用于辅助、次要的信息、图标等：-->
+    <!--例如用户列表页用户简介、个人中心/主页 简介、评论内容、不重要的按钮（取消）、消息列表消息内容、粉丝/关注列表-->
+    <!--粉丝数、相册列表照片张数 等-->
+      <!--&ndash;&gt;-->
+    <!--<color name="normal_for_assist_text">#999999</color>-->
+    <!--&lt;!&ndash;-->
+    <!--浏览量、点赞图标及其文字、动态详情页底部操作栏图标及文字、不可点击状态下文字按钮等-->
+    <!--&ndash;&gt;-->
+    <!--<color name="normal_for_disable_button_text">#b2b2b2</color>-->
+    <!--<color name="qa_niming">#a2a2a2</color>-->
+    <color name="versionchecklib_theme_color">#000000</color>
+
+
+</resources>

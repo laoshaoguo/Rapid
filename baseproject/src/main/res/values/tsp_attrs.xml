@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChatMessageList">
+        <!--我的气泡-->
+        <attr name="myBubbleBackground" format="reference"/>
+        <!--别人的气泡-->
+        <attr name="otherBubbleBackground" format="reference"/>
+        <!--是否显示头像-->
+        <attr name="showUserAvatar" format="boolean"/>
+        <!--是否显示名字-->
+        <attr name="showName" format="boolean"/>
+    </declare-styleable>
+    <!--组合按钮-->
+    <declare-styleable name="combinationBtn">
+        <!--左图-->
+        <attr name="leftImage" format="reference"/>
+        <!--右图-->
+        <attr name="rightImage" format="reference"/>
+        <!--左边文字-->
+        <attr name="leftText" format="reference|string"/>
+        <!--右边文字-->
+        <attr name="rightText" format="reference|string"/>
+        <!--右边hint-->
+        <attr name="rightHintText" format="reference|string"/>
+        <!--左边文字颜色-->
+        <attr name="leftTextColor" format="color|reference"/>
+        <!--右边文字颜色-->
+        <attr name="rightTextColor" format="color|reference"/>
+        <!--右边hint颜色-->
+        <attr name="rightHintColor" format="color|reference"/>
+        <!--左边文字大小-->
+        <attr name="leftTextSize" format="reference|dimension"/>
+        <!--右边文字大小-->
+        <attr name="rightTextSize" format="reference|dimension"/>
+        <!--是否显示分割线-->
+        <attr name="showLine" format="reference|boolean"/>
+        <!--是否显示上分割线-->
+        <attr name="showTopLine" format="reference|boolean"/>
+        <!--线的颜色-->
+        <attr name="lineColor" format="color"/>
+        <!--线的背景-->
+        <attr name="lineBg" format="reference"/>
+        <!--分割线左右间距-->
+        <attr name="dividerLeftMargin" format="reference|dimension"/>
+        <attr name="dividerRightMargin" format="reference|dimension"/>
+        <!--左边文字左边的间距-->
+        <attr name="leftTextLeftPadding" format="reference|dimension"/>
+        <!--背景色-->
+        <attr name="bgColor" format="reference"/>
+    </declare-styleable>
+    <!--组合输入框和按钮文字-->
+    <declare-styleable name="inputLimitView">
+        <!--输入的最大值-->
+        <attr name="limitSize" format="reference|integer"/>
+        <!--输入多少字的时候显示 限制提示-->
+        <attr name="showLimitSize" format="reference|integer"/>
+        <!--输入框的hint提示符-->
+        <attr name="hintContent" format="reference|string"/>
+        <!--编辑框显示的行数，超过就滚动-->
+        <attr name="showLines" format="reference|integer"/>
+        <attr name="content_size" format="dimension"/>
+        <attr name="content_gravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+    </declare-styleable>
+
+    <!--组合输入框 文字 输入框-->
+    <declare-styleable name="inputContainHint">
+        <!--是否显示分割线-->
+        <attr name="showDiver" format="reference|boolean"/>
+        <!--是否必填-->
+        <attr name="isRequired" format="enum">
+            <enum name="visiable" value="0"/>
+            <enum name="invisiable" value="4"/>
+            <enum name="gone" value="8"/>
+        </attr>
+        <!--左边文字-->
+        <attr name="leftHintText" format="reference|string"/>
+        <!--输入框提示-->
+        <attr name="rightHint" format="reference|string"/>
+        <!--输入的类型-->
+        <attr name="rightInputType" format="reference|string"/>
+        <!--输入长度-->
+        <attr name="rightMaxLength" format="reference|integer"/>
+        <!--内容高度-->
+        <attr name="totalMinHeight" format="reference|dimension"/>
+        <!--输入行数最高-->
+        <attr name="rightMaxLines" format="reference|integer"/>
+    </declare-styleable>
+
+    <!--有加载动画的按钮-->
+    <declare-styleable name="loadButton">
+        <!--按钮文字-->
+        <attr name="text" format="reference|string"/>
+
+    </declare-styleable>
+    <!--顶部错误提示指示器-->
+    <declare-styleable name="topTipView">
+        <!--文字-->
+        <attr name="tipText" format="reference|string"/>
+
+    </declare-styleable>
+
+    <!--IconTextView图标文本控件-->
+    <declare-styleable name="IconTextView">
+        <!--文字大小-->
+        <attr name="itv_textSize" format="dimension|reference"/>
+        <!--文字颜色-->
+        <attr name="itv_textColor" format="color|reference"/>
+
+        <!--图片与文字间隔-->
+        <attr name="itv_gap" format="dimension|reference"/>
+
+        <!--方向
+             TOP：上边
+             BOTTOM: 下边
+             LEFT：左边
+             RIGHT：右边
+        -->
+        <attr name="itv_direction">
+            <enum name="TOP" value="0"/>
+            <enum name="BOTTOM" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+        </attr>
+
+        <!--图片资源-->
+        <attr name="itv_icon" format="reference"/>
+        <!--显示的文本-->
+        <attr name="itv_text" format="string|reference"/>
+
+        <!--图片宽高,如果不设置宽度和高度的话，默认按照图片的宽度和高度来-->
+        <attr name="itv_iconWidth" format="dimension|reference"/>
+        <attr name="itv_iconHeight" format="dimension|reference"/>
+        <attr name="itv_extroHeight" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerRecyclerView">
+        <attr name="triggerOffset" format="float"/>
+        <attr name="flingFactor" format="float"/>
+        <attr name="singlePageFling" format="boolean"/>
+    </declare-styleable>
+    <!--有按下效果的Imageview-->
+    <declare-styleable name="FilterImageView">
+        <attr name="pressColor" format="reference|color"/>
+        <attr name="pressShape">
+            <enum name="square" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!-- 可以设置 drawable 大小的 TextView-->
+    <declare-styleable name="DrawableSizeTextView">
+        <attr name="compoundDrawableWidth" format="dimension"/>
+        <attr name="compoundDrawableHeight" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="userAvatarView">
+        <!--头像大小-->
+        <attr name="ts_avatare_size" format="dimension"/>
+        <attr name="ts_ratio" format="float"/>
+
+    </declare-styleable>
+
+    <!--图文编辑框-->
+    <declare-styleable name="MarkDownEditor">
+        <!--输入框hint-->
+        <attr name="ts_md_hint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ByteLimitEditText">
+        <attr name="need_word_byte_limit" format="boolean" />
+        <attr name="word_byte_limit_lengh" format="dimension|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SpanTextViewWithEllipsize">
+
+
+        <attr name="use_look_more" format="boolean"/>
+
+
+        <attr name="text_suffix" format="string|reference"/>
+
+
+        <attr name="text_lookmore" format="string|reference"/>
+
+        <!--屏幕百分比 <= 1.0f -->
+        <attr name="text_totalWidth" format="float"/>
+    </declare-styleable>
+</resources>

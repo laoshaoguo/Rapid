@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PhotoPicker" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appupdate" />
+            <option value="$PROJECT_DIR$/baseadapter-recyclerview" />
+            <option value="$PROJECT_DIR$/baseproject" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/image-compress" />
+            <option value="$PROJECT_DIR$/link-library" />
+            <option value="$PROJECT_DIR$/mysnackbar" />
+            <option value="$PROJECT_DIR$/overscrolllib" />
+            <option value="$PROJECT_DIR$/pickerview" />
+            <option value="$PROJECT_DIR$/rxerrorhandler" />
+            <option value="$PROJECT_DIR$/screenbadge" />
+            <option value="$PROJECT_DIR$/ucrop" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

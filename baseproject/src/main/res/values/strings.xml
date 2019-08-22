@@ -1,0 +1,214 @@
+<resources>
+    <!-- 异常输出内容 -->
+    <string name="err_share_no_content">分享内容不能为空</string>
+    <string name="err_net_not_work">网络不可用，请检查！</string>
+    <string name="erro_argument_in_method">方法使用了不合法的参数</string>
+    <string name="data_load_error">数据加载失败</string>
+    <string name="load_error">加载失败</string>
+    <string name="loading">加载更多</string>
+    <string name="no_data">没有任何内容</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="im_not_work">聊天当前不可用</string>
+    <!-- 通用 -->
+    <string name="statistical_unit_million">万</string>
+    <string name="statistical_unit_second">秒</string>
+    <string name="empty">""</string>
+    <string name="emptyStr">空</string>
+    <string name="wu">无</string>
+    <string name="cancel">取消</string>
+    <string name="explain">提示</string>
+    <string name="can_not_reward_self">不能打赏自己</string>
+    <string name="i_know">知道了</string>
+    <string name="delete">删除</string>
+    <string name="close">关闭</string>
+    <string name="seconds">s后重发</string>
+    <string name="username">用户名</string>
+    <string name="set_password">设置密码</string>
+    <string name="password">密码</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="sure_new_password">确认新密码</string>
+    <string name="duplicate_password">重复密码</string>
+    <string name="vertify_code">验证码</string>
+    <string name="phone_number">手机号</string>
+    <string name="phone_hint">手机</string>
+    <string name="email_address">邮箱</string>
+    <string name="login_account">账号</string>
+    <string name="send_vertify_code">获取验证码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="forget_password_">忘记密码?</string>
+    <string name="find_password">找回密码</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="keep_secret">保密</string>
+    <string name="complete">完成</string>
+    <string name="completed">已完成</string>
+    <string name="send_success">发送成功</string>
+    <string name="success">成功</string>
+    <string name="send_failure">发送失败</string>
+    <string name="send">发送</string>
+    <string name="sure">确认</string>
+    <string name="determine">确定</string>
+    <string name="change_head_icon">更换头像</string>
+    <string name="change_bg_cover">更换封面</string>
+    <string name="select_certification">选择证件图片</string>
+    <string name="crop_photo">裁剪图片</string>
+    <string name="publish">发布</string>
+    <string name="skip">跳过</string>
+    <string name="intro_default">这家伙很懒，什么也没有留下</string>
+    <string name="money_format_with_unit">%1$.2f%2$s</string>
+    <string name="money_format">%.2f</string>
+    <string name="upload_sucess">上传成功</string>
+    <string name="qa_detail_edit">编辑</string>
+    <string name="collect">收藏</string>
+    <string name="loading_state">加载中&#8230;</string>
+    <string name="chat_send_message_read">已读</string>
+    <string name="share_default">本站/App 由 %1$s 提供技术和产品支持，感谢你的使用。</string>
+
+
+    <!-- 注册 -->
+    <string name="regist">注册</string>
+    <string name="username_input_hint">用户名不能低于2个中文或4个英文</string>
+    <string name="username_toast_hint">@string/username_input_hint</string>
+    <string name="username_toast_not_number_start_hint">用户名不能以数字开头</string>
+    <string name="username_toast_not_symbol_hint">用户名只能包含数字、字母和下划线</string>
+    <string name="immediate_regist">注册</string>
+    <string name="vertify_code_input_hint">输入4&#8211;6位验证码</string>
+    <string name="phone_number_input_hint">输入11位手机号</string>
+    <string name="email_address_input_hint">输入邮箱地址</string>
+    <string name="login_account_hint">用户名/手机号/邮箱</string>
+    <string name="phone_number_toast_hint">请输入大陆地区合法手机号码</string>
+    <string name="email_address_toast_hint">请输入正确的邮箱地址</string>
+    <string name="login_account_toast_hint">请输入账号</string>
+    <string name="password_input_hint">输入6位以上登录密码</string>
+    <string name="password_toast_hint">密码长度不能低于6位</string>
+    <string name="old_password_toast_hint">密码长度不能低于6位</string>
+    <string name="new_password_toast_hint">密码长度不能低于6位</string>
+    <string name="sure_new_password_toast_hint">密码长度不能低于6位</string>
+    <string name="password_diffrent">两次密码输入不一致</string>
+    <string name="find_password_success">找回密码成功</string>
+    <string name="change_password_success">更改成功</string>
+    <string name="register_by_phone">手机注册</string>
+    <string name="register_by_email">邮箱注册</string>
+    <string name="find_password_by_phone">手机找回</string>
+    <string name="find_password_by_email">邮箱找回</string>
+    <string name="login_by_third_platform">社交账号登陆</string>
+    <string name="third_platform_complete_account">完善资料</string>
+    <string name="third_platform_complete_register">注册新用户</string>
+    <string name="third_platform_bind_old_account">绑定已有账号</string>
+    <string name="third_platform_bind_account">绑定账号</string>
+    <string name="third_platform_exist_account">已有账号</string>
+    <string name="third_platform_bind_confirm">确认绑定</string>
+    <string name="third_qq">QQ</string>
+    <string name="third_weibo">微博</string>
+    <string name="third_wechat">微信</string>
+
+    <!-- 拍照相册相关 -->
+    <string name="choose_from_photo">从相册中选择</string>
+    <string name="choose_from_camera">拍照</string>
+    <string name="choose_max_photos">你最多可以选择%1$d张图片</string>
+    <string name="album_image_count">%1$d张</string>
+    <string name="start_camera_fail">启动相机失败</string>
+    <string name="crop_fail">裁剪失败</string>
+    <string name="camera_permission">相机权限设置</string>
+    <string name="setting_permission">去设置</string>
+    <string name="setting_permission_hint">请为TS+开放相机权限: 手机设置-授权管理-TS+(打开)</string>
+    <!--  登录  -->
+    <string name="bt_login">登录</string>
+    <string name="onekey_login">验证码登录</string>
+    <string name="phone_verify_login">使用手机号登录</string>
+    <string name="account_login">使用账号密码登录</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_cancel">取消登录</string>
+    <string name="no_login">不登录，先随便逛逛</string>
+    <string name="permisson_refused">如需使用此功能，请允许权限申请！</string>
+    <string name="permisson_refused_nerver_ask">如需使用此功能，请前往应用设置开放权限！</string>
+    <string name="input_password">输入密码</string>
+
+    <!-- 动态相关 -->
+    <string name="zero">0</string>
+    <string name="like">喜欢</string>
+    <string name="comment">评论</string>
+    <string name="share">分享</string>
+    <string name="more">更多</string>
+    <string name="send_fail">发送失败</string>
+    <string name="see_origin_photo">查看原图</string>
+    <string name="see_origin_photo_vip">会员可免费查看，成为会员？</string>
+    <string name="see_origin_photo_pay">购买查看</string>
+    <string name="dynamic_top_flag">置顶</string>
+
+    <!-- 中间弹窗 -->
+    <string name="buy_pay">购买支付</string>
+    <string name="send_info_pay">投稿支付</string>
+    <string name="buy_pay_desc">你只需%1$d%2$s就可查看此图片</string>
+    <string name="buy_pay_words_desc">你只需支付%1$d%2$s就可查看此内容</string>
+    <string name="buy_pay_circle_desc">你只需支付%1$s%2$s就可加入</string>
+    <string name="buy_pay_circle_join">你需要申请加入</string>
+    <string name="buy_pay_downlaod_desc">你只需支付%1$d%2$s就可下载图片</string>
+    <string name="buy_pay_music_ablum_desc">该专辑为付费专辑，你只需\n支付%1$s%2$s即可收听该专辑</string>
+    <string name="buy_pay_single_music_desc">该歌曲为付费歌曲，你只需\n支付%1$s%2$s即可收听该歌曲</string>
+    <string name="publish_pay_info">本次投稿你需支付%1$d%2$s\n是否继续投稿？</string>
+    <string name="qa_pay_for_excellent_hint">你只需%1$d%2$s就可以使问\n题成为精选问答</string>
+    <string name="qa_pay_for_watch_answer_hint">你只需%1$d%2$s即可围观该回答</string>
+    <string name="buy_pay_member">""</string>
+    <string name="buy_pay_integration">%s</string>
+    <string name="buy_pay_in">购买</string>
+    <string name="buy_pay_in_payment">支付</string>
+    <string name="buy_pay_out">返回</string>
+    <string name="publish_info_pay_in">确认投稿</string>
+    <string name="publish_info_pay_out">暂不考虑</string>
+
+    <!--音乐FM-->
+    <string name="music_fm">音乐FM</string>
+    <string name="music_not_found">当前音乐无法播放</string>
+    <string name="music_order_nomal">顺序播放</string>
+    <string name="music_order_random">随机播放</string>
+    <string name="music_order_single">单曲循环</string>
+    <string name="windows_permission">悬浮窗权限设置</string>
+    <string name="setting_windows_permission_hint">请为TS+开放悬浮窗权限: 手机设置-授权管理-TS+(打开)</string>
+    <string name="oppo_setting_windows_permission_hint">请为TS+开放悬浮窗权限: 手机管家-权限隐私-悬浮窗管理-TS+(打开)</string>
+
+    <!--资讯-->
+    <string name="info_editor">编辑</string>
+    <string name="info_sort">长按可编辑</string>
+    <string name="info_delete">点击可删除</string>
+    <string name="info_subscribed">我的订阅</string>
+    <string name="info_unsubscribe">更多订阅</string>
+    <string name="info_search">搜索</string>
+    <string name="info_cancle">取消</string>
+    <string name="info_details">资讯详情</string>
+    <string name="info_collect">收藏</string>
+    <string name="info_hot">热门</string>
+    <string name="info_recommend">推荐</string>
+    <string name="info_close">收起</string>
+    <string name="publish_withpay_info">支付并发布文章</string>
+    <string name="publish_info">发布文章</string>
+    <string name="upload_info_cover">点击上传封面</string>
+    <string name="upload_info_cover_instructions">请上传封面</string>
+    <string name="upload_info_cover_des">不上传封面则默认为文章内第一张图</string>
+
+
+    <!--分享类型-->
+    <string name="qq_share">QQ</string>
+
+    <string name="qZone_share">空间</string>
+    <string name="weChat_share">微信</string>
+    <string name="weCircle_share">朋友圈</string>
+    <string name="weibo_share">微博</string>
+    <string name="share_sccuess">分享成功</string>
+    <string name="share_ing">分享中&#8230;</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="share_forward">转发</string>
+    <string name="share_download">下载</string>
+    <string name="share_letter">私信发送</string>
+    <string name="share_delete">删除</string>
+    <string name="share_report">举报</string>
+    <string name="share_sticktp">申请置顶</string>
+    <string name="share_collect">收藏</string>
+    <string name="please_install_app">请先安装应用</string>
+    <string name="app_crash_tip">很抱歉,程序出现异常,请重新打开使用!</string>
+
+    <!--@-->
+    <string name="at_content">&#160;&#173;&#064;%s&#173;&#160;</string>
+</resources>

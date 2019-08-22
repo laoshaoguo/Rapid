@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      圈子       ################################-->
+    <!--选择匿名-高度-->
+    <dimen name="qa_anonymity_height">40dp</dimen>
+</resources>

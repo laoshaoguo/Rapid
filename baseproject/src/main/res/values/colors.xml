@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题色-->
+    <color name="themeColor">@color/important_for_theme</color>
+    <color name="themeColor_alpha7">#B359b6d7</color>
+    <color name="themeColor_alpha3">#3359b6d7</color>
+    <!--背景色-->
+    <color name="bgColor">@color/general_for_bg_light</color>
+    <color name="bgColor_alpha_0.5">@color/general_for_bg_light_alpha_0.5</color>
+    <!--titilebar背景色   your app's branding color (for the app bar) -->
+    <color name="colorPrimary">@color/themeColor</color>
+    <!--titlebar 文字颜色-->
+    <color name="textColorPrimary">@color/white</color>
+    <!--状态栏背景色   darker variant of colorPrimary (for status bar, contextual app bars) -->
+    <color name="colorPrimaryDark">@color/themeColor</color>
+    <!--checkbox或者dialog按钮颜色    theme UI controls like checkboxes and text fields-->
+    <color name="colorAccent">@color/themeColor</color>
+
+    <!--common-->
+    <color name="white">#ffffff</color>
+
+    <!--toolbar-->
+    <color name="toolbar_text_corlor_normal">@color/important_for_content</color>
+
+    <!-- 聊天-->
+    <color name="chat_message_bubble_my_bgColor">#b3e1f2</color>
+    <color name="chat_message_bubble_my_strokeColor">#87c6dd</color>
+    <color name="chat_message_bubble_other_bgColor">#f7f7f7</color>
+    <color name="chat_message_bubble_other_strokeColor">#dee1e2</color>
+    <!--网页进度条-->
+    <color name="bg_pb_cover">#59b6d7</color>
+
+    <color name="music_progress">#09b6d7</color>
+    <!--图片查看器，查看原图按钮,背景色 透明度为20%的黑色-->
+    <color name="origin_back_color">#33000000</color>
+    <!--图片查看器，查看原图按钮,边框 透明度为40%的黑色-->
+    <color name="origin_divider_color">#66ffffff</color>
+    <!--资讯订阅-->
+    <color name="like_theme">#d9eef6</color>
+    <!--标签选中背景-->
+    <color name="tag_choosed_bg">#e6f4f9</color>
+    <!--启动广告-->
+    <color name="launch_advert">#33000000</color>
+    <!--提现明细分割线-->
+    <color name="withdrawals_item_line">#efefef</color>
+    <color name="user_tag_bg">#def0f7</color>
+    <color name="certification_result_hint_bg">#b34bb893</color>
+    <color name="info_top">#49b691</color>
+    <color name="more_pop_bg">#f6f6f6</color>
+
+    <color name="black_translucent">#50000000</color>
+</resources>

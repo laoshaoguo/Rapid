@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <!--android:background="@android:color/transparent"-->
+    <!--android:background="@drawable/bg_custom"-->
+
+    <FrameLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_bigger_large"
+            android:layout_gravity="bottom"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/pic_update"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_custom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/versionchecklib_check_new_version"
+            android:textColor="@color/important_for_content"
+            android:textSize="@dimen/size_sub_title"/>
+
+        <br.tiagohm.markdownview.MarkdownView
+            android:id="@+id/md_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/update_description_height"
+            android:layout_marginTop="@dimen/spacing_mid"
+            android:visibility="visible"
+            tools:ignore="WebViewLayout"/>
+
+
+        <TextView
+            android:id="@+id/versionchecklib_version_dialog_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_big_large"
+            android:layout_marginEnd="@dimen/spacing_big_large"
+            android:layout_marginStart="@dimen/spacing_big_large"
+            android:layout_marginTop="@dimen/spacing_normal_large"
+            android:background="@drawable/shape_update"
+            android:padding="@dimen/spacing_mid_small_8dp"
+            android:text="@string/versionchecklib_update_version"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_content"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/dialog_width"
+        android:paddingTop="@dimen/spacing_normal_large"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_ignore"
+            android:padding="@dimen/spacing_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ico_update_close"/>
+    </FrameLayout>
+
+</LinearLayout>

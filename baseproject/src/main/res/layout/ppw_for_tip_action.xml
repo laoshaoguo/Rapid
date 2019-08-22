@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_pop_item1"
+        style="@style/style_tip_action_list_item">
+
+        <TextView
+            android:id="@+id/tv_pop_item1"
+            style="@style/style_action_tip_item"/>
+
+        <View
+            android:id="@+id/v_mine_tip1"
+            style="@style/style_action_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_des"
+        style="@style/style_tip_action_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_small">
+
+        <TextView
+            android:id="@+id/tv_pop_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_normal_large"
+            android:paddingTop="@dimen/spacing_small"
+            android:textColor="@color/normal_for_assist_text"
+            android:textSize="@dimen/size_content"/>
+
+        <View
+            android:id="@+id/v_pop_des_tip"
+            style="@style/style_action_tip"
+            android:layout_marginTop="@dimen/spacing_small_3dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_item2"
+        style="@style/style_tip_action_list_item"
+        android:layout_marginTop="@dimen/spacing_line">
+
+        <TextView
+            android:id="@+id/tv_pop_item2"
+            style="@style/style_action_tip_item"/>
+
+        <View
+            android:id="@+id/v_mine_tip2"
+            style="@style/style_action_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_item3"
+        style="@style/style_tip_action_list_item"
+        android:layout_marginTop="@dimen/spacing_line">
+
+        <TextView
+            android:id="@+id/tv_pop_item3"
+            style="@style/style_action_tip_item"/>
+
+        <View
+            android:id="@+id/v_mine_tip3"
+            style="@style/style_action_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_item4"
+        style="@style/style_tip_action_list_item"
+        android:layout_marginTop="@dimen/spacing_line">
+
+        <TextView
+            android:id="@+id/tv_pop_item4"
+            style="@style/style_action_tip_item"/>
+
+        <View
+            android:id="@+id/v_mine_tip4"
+            style="@style/style_action_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_item5"
+        style="@style/style_tip_action_list_item"
+        android:layout_marginTop="@dimen/spacing_line">
+
+        <TextView
+            android:id="@+id/tv_pop_item5"
+            style="@style/style_action_tip_item"/>
+
+        <View
+            android:id="@+id/v_mine_tip5"
+            style="@style/style_action_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_item6"
+        style="@style/style_tip_action_list_item"
+        android:layout_marginTop="@dimen/spacing_line">
+
+        <TextView
+            android:id="@+id/tv_pop_item6"
+            style="@style/style_action_tip_item"/>
+
+        <View
+            android:id="@+id/v_mine_tip6"
+            style="@style/style_action_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_bottom"
+        style="@style/style_tip_action_list_item"
+        android:layout_marginTop="@dimen/spacing_small">
+
+        <TextView
+            android:id="@+id/tv_pop_bottom"
+            style="@style/style_action_tip_item"/>
+
+        <View
+            android:id="@+id/tv_pop_bottom_tip"
+            style="@style/style_action_tip"
+            android:layout_marginTop="@dimen/spacing_small_3dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+

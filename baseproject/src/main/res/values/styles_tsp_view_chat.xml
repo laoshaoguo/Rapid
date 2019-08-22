@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      聊天相关       ################################-->
+    <!-- 聊天内容容器，除开时间 -->
+    <style name="style_chat_content_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/spacing_mid</item>
+    </style>
+    <!-- 聊天头像 -->
+    <style name="style_chat_headpic">
+        <item name="android:layout_width">@dimen/headpic_for_list</item>
+        <item name="android:layout_height">@dimen/headpic_for_list</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@mipmap/pic_default_secret</item>
+    </style>
+    <!-- 聊天名字 -->
+    <style name="style_chat_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/normal_for_dynamic_list_content</item>
+        <item name="android:textSize">@dimen/size_content_comment</item>
+    </style>
+    <!-- 气泡 -->
+    <style name="style_chat_bubble">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 文字内容 -->
+    <style name="style_chat_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">@dimen/chat_list_msg_text_maxwith</item>
+        <item name="android:autoLink">web</item>
+        <item name="android:lineSpacingMultiplier">@dimen/line_spacing_Multiplier_normal</item>
+        <item name="android:textColor">@color/important_for_content</item>
+        <item name="android:textSize">@dimen/size_content</item>
+
+    </style>
+    <!-- 发送状态 -->
+    <style name="style_chat_status">
+        <item name="android:layout_width">@dimen/icon_for_assist_small</item>
+        <item name="android:layout_height">@dimen/icon_for_assist_small</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

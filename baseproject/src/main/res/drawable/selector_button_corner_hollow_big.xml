@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_button_corner_disable_hollow_big" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/shape_button_corner_press_hollow_big" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/shape_button_corner_normal_hollow_big"></item>
+</selector>
+

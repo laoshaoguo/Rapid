@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/spacing_normal"
+              android:paddingRight="@dimen/spacing_normal">
+
+    <include
+        layout="@layout/include_chat_time"/>
+
+    <RelativeLayout
+        style="@style/style_chat_content_container">
+
+        <com.zhiyicx.baseproject.widget.UserAvatarView
+            android:id="@+id/iv_chat_headpic"
+            style="@style/style_chat_headpic"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            app:ts_avatare_size="@dimen/headpic_for_list"/>
+
+        <TextView
+            android:id="@+id/tv_chat_name"
+            style="@style/style_chat_name"
+            android:layout_toEndOf="@id/iv_chat_headpic"
+            android:layout_toRightOf="@id/iv_chat_headpic"
+            android:gravity="top|start"
+            tools:text="李四"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_chat_name"
+            android:layout_marginTop="@dimen/chat_list_content_margintop"
+            android:layout_toRightOf="@id/iv_chat_headpic">
+
+            <RelativeLayout
+                android:id="@+id/rl_chat_bubble"
+                style="@style/style_chat_bubble"
+                android:background="@drawable/shape_message_bubble_other">
+
+                <TextView
+                    android:id="@+id/tv_chat_content"
+                    style="@style/style_chat_content"
+                    android:textIsSelectable="true"
+                    tools:text="22222222222222222222222222222222222222222222222222222222222222222222222222"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_mid_small"
+                    android:layout_toRightOf="@+id/rl_chat_bubble"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/msg_status"
+                        style="@style/style_chat_status"
+                        android:src="@drawable/msg_box_remind"/>
+                <!--进度-->
+                <skin.support.widget.SkinCompatProgressBar
+                        android:id="@+id/progress_bar"
+                        android:visibility="invisible"
+                        style="@style/style_loading"
+                        android:layout_width="@dimen/chat_laoding_size"
+                        android:layout_height="@dimen/chat_laoding_size"/>
+            </FrameLayout>
+
+            <!--消息已送达，已读等回执-->
+            <TextView
+                    android:id="@+id/tv_message_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_note_assist"
+                    android:textColor="@color/normal_for_disable_button_text"
+                    android:layout_marginLeft="@dimen/spacing_mid_small"
+                    android:layout_toRightOf="@+id/rl_chat_bubble"
+                    android:layout_alignBottom="@+id/rl_chat_bubble"
+                    android:text="@string/chat_send_message_read"
+                    android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

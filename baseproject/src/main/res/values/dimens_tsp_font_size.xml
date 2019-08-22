@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--个人主页动态左侧的显示天的文字大小-->
+    <dimen name="size_dynamic_day">22sp</dimen>
+    <!--排序的排位数字-->
+    <dimen name="size_rank_number">17sp</dimen>
+    <!-- 标题栏标题；动态详情页标题 -->
+    <dimen name="size_primary_title">18sp</dimen>
+    <!--动态列表动态标题；发现列表文字；
+    顶部标题栏右侧文字按钮；
+    详情页顶部标题栏昵称；
+    消息/相册/点赞/粉丝/关注/频道/资讯/列表标题;
+    个人中心/个人主页用户昵称；
+    选择城市页面省市文字(非标签内文字)
+    音乐专辑标题；音乐播放页面顶部操作栏歌曲名称；
+    -->
+    <dimen name="size_sub_title">16sp</dimen>
+    <!--
+    设置/修改资料/修改密码/意见反馈页面文字；
+    动态详情页正文/聊天详情页聊天内容
+    收到的赞列表的用户昵称;
+    发布动态编辑标题和内容文字；活动列表标题;
+    歌曲列表歌曲标题
+    -->
+    <dimen name="size_content">15sp</dimen>
+    <!--
+    频道/消息/相册/点赞/粉丝/关注/频道列表中标题下文字及粉丝数；
+    详情页点赞人数；城市等标签内文字；
+    个人中心/个人主页简介；
+    音乐播放界面歌词内容；专辑/频道简介；
+    报名弹窗内容文字；找人筛选文字
+    -->
+    <dimen name="size_content_assist">14sp</dimen>
+    <!--
+    首页动态/聊天详情的列表用户昵称;
+    首页动态列表评论及昵称，详情页评论内容；
+    订阅按钮内文字
+    -->
+    <dimen name="size_content_comment">13sp</dimen>
+    <!--
+    时间、点赞数、评论、收藏、播放量等图标标签辅助信息;
+    分享弹窗图标下文字；
+    详情页底部操作栏，详情页评论用户昵称
+    新消息数量提示圈内的数字
+    资讯列表资讯来源；活动列表的时间、地址、状态；
+    音乐播放界面歌手/作者
+    -->
+    <dimen name="size_icon_assist">12sp</dimen>
+    <!--
+    底部导航栏下边小字
+    输入评论字数限制提示；
+    聊天详情页时间;
+    音乐播放页面评论数计歌曲进度条两端的时间
+    -->
+    <dimen name="size_note_assist">10sp</dimen>
+
+    <!--启动广告字体大小-->
+    <dimen name="size_advert_launche">11sp</dimen>
+    <!--付费弹窗金额字体大小-->
+    <dimen name="size_paypop_window">30sp</dimen>
+
+    <!--帖子多找图提示字体大小-->
+    <dimen name="size_number_shadow">25sp</dimen>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_login_height"
+    android:background="@drawable/selector_button_corner_solid_big"
+    android:gravity="center_vertical"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:drawablePadding="@dimen/spacing_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_primary_title"
+        skin:enable="true"
+        tools:text="我的订阅"
+        />
+
+    <ImageView
+        android:id="@+id/iv_load"
+        android:layout_width="@dimen/icon_for_user_center"
+        android:layout_height="@dimen/icon_for_user_center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_toRightOf="@id/tv_text"
+        android:visibility="gone"
+        android:src="@drawable/frame_loading_login_button"/>
+</RelativeLayout>
+

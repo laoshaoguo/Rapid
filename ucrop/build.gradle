@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+android {
+    def gConfig = rootProject.extensions.getByName("ext")
+    compileSdkVersion gConfig.getAt("compileSdkVersion")
+    buildToolsVersion gConfig.getAt("buildToolsVersion")
+    defaultConfig {
+        minSdkVersion gConfig.getAt("minSdkVersion")
+        targetSdkVersion gConfig.getAt("targetSdkVersion")
+        versionCode gConfig.getAt("versionCode")
+        versionName gConfig.getAt("versionName")
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    resourcePrefix 'ucrop_'
+
+    sourceSets.main {
+        jni.srcDirs = [];
+    }
+}
+
+dependencies {
+    def sdkSoupportDependences = rootProject.ext.sdksoupportDependencies;
+    def dataDependences = rootProject.ext.dataDependencies
+
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation sdkSoupportDependences.appcompatV7
+    implementation dataDependences.okhttp3
+}
+

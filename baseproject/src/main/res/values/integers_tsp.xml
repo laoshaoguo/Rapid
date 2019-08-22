@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--#########################################      登录注册相关       ################################-->
+
+    <!--手机号长度-->
+    <integer name="phone_number_length">11</integer>
+    <!--密码最大长度-->
+    <integer name="password_maxlenght">16</integer>
+    <!--置顶标识最大长度-->
+    <integer name="excelent_maxlength">3</integer>
+
+    <!--密码最小长度-->
+    <integer name="password_min_length">6</integer>
+    <!--用户名最大长度 ,数量代表字符-->
+    <integer name="username_max_length">8</integer>
+    <!--用户名最大长度 ,数量代表后台定义的长度 中文 1 除外 0.5-->
+    <integer name="username_max_byte_length">24</integer>
+    <!--用户名最小长度 ,数量代表字符-->
+    <integer name="username_min_length">2</integer>
+    <!--用户名最小长度 ,数量代表后台定义的长度  中文 1 除外 0.5-->
+    <integer name="username_min_byte_length">4</integer>
+    <!--验证码长度-->
+    <integer name="vertiry_code_lenght">6</integer>
+    <!--验证码长度-->
+    <integer name="vertiry_code_min_lenght">4</integer>
+
+    <!--#########################################      动画相关       ################################-->
+
+    <!--动画执行时长-->
+    <integer name="animation_default_duration">300</integer>
+
+    <!--#########################################      输入限制相关       ################################-->
+    <!-- 自定义金额最多 8 位数 -->
+    <integer name="money_input_max_size">8</integer>
+    <!-- 最多输入 255 个评论字符 -->
+    <integer name="comment_input_max_size">255</integer>
+    <!-- 输入到 200 字符的时候显示提示 -->
+    <integer name="show_comment_input_size">200</integer>
+    <!-- 最多输入 255 个聊天字符 -->
+    <integer name="chat_input_max_size">255</integer>
+    <!-- 输入到 200 字符的时候显示提示 -->
+    <integer name="show_chat_input_size">200</integer>
+
+    <!-- 线性输入框的最大行数 -->
+    <integer name="max_lines">4</integer>
+    <!-- 简介最多输入字符数量 -->
+    <integer name="introduce_input_max_size">50</integer>
+    <!-- 简介输入到多少字符的时候显示提示 -->
+    <integer name="show_introduce_input_size">33</integer>
+
+    <!-- 创建圈子公告最多输入字符数量 -->
+    <integer name="circle_notice_input_max_size">2000</integer>
+    <!-- 创建圈子名字最多输入字符数量 -->
+    <integer name="circle_name_input_max_size">20</integer>
+    <!-- 创建圈子简介最多输入字符数量 -->
+    <integer name="circle_introduce_max_size">255</integer>
+    <!-- 创建圈子简介输入到多少字符的时候显示提示 -->
+    <integer name="circle__input_size">200</integer>
+
+    <!--发布动态标题最大字数30-->
+    <integer name="dynamic_title_max_size">30</integer>
+    <!--发布动态标题字数在20时提示-->
+    <integer name="dynamic_title_input_size">20</integer>
+    <!--发布动态内容最大字数30-->
+    <integer name="dynamic_content_max_size">255</integer>
+    <!--发布动态内容字数在200时提示-->
+    <integer name="dynamic_content_input_size">200</integer>
+    <!--发布动态内容的显示行数-->
+    <integer name="dynamic_content_show_lines">8</integer>
+    <integer name="dynamic_content_show_lines_forward">4</integer>
+    <integer name="dynamic_list_content_show_lines">6</integer>
+    <integer name="dynamic_list_forward_content_show_lines">2</integer>
+    <!--动态列表标题最大显示字数-->
+    <integer name="dynamic_list_title_max_show_size">18</integer>
+    <!--动态列表标题最大显示字数,最大限制修改到 DynamicDetialBeanV2 中-->
+    <!--<integer name="dynamic_list_content_max_show_size">140</integer>-->
+
+    <integer name="certification_description_max_length">200</integer>
+    <integer name="certification_description_show_limit_length">170</integer>
+    <!--资讯摘要-->
+    <integer name="info_summary_max_length">200</integer>
+    <integer name="info_summary_show_limit_length">150</integer>
+
+    <!--意见反馈-->
+    <integer name="feed_back_content_max_size">200</integer>
+    <!--意见反馈内容字数在达到数量后提示-->
+    <integer name="feed_back_content_input_size">150</integer>
+    <!--举报-->
+    <integer name="report_content_max_size">255</integer>
+    <!--举报内容字数在达到数量后提示-->
+    <integer name="report_content_input_size">200</integer>
+    <!--#########################################      浏览器相关       ################################-->
+    <!-- 浏览器最大长度-->
+    <integer name="progressbar_max">100</integer>
+
+    <!--#########################################      viewpager的tab切换相关      ################################-->
+    <!--tab的间距,单位dp-->
+    <integer name="tab_margin">20</integer>
+    <integer name="tab_margin_10">10</integer>
+    <!--tab的间距,单位dp-->
+    <integer name="tab_right_margin">50</integer>
+    <!--tab的指示器边缘和文字边缘的距离，单位dp-->
+    <integer name="tab_padding">7</integer>
+    <!--tab的指示器高度，单位dp-->
+    <integer name="line_height">2</integer>
+    <integer name="line_width">30</integer>
+    <integer name="no_line_height">0</integer>
+    <!--tab的文字大小，单位sp-->
+    <integer name="tab_text_size_big">18</integer>
+    <integer name="tab_text_size">16</integer>
+    <integer name="tab_text_size_15">15</integer>
+    <!--标签最多的个数-->
+    <integer name="tag_max_nums">5</integer>
+    <!--用户最多标签数量-->
+    <integer name="user_tag_max_nums">5</integer>
+
+    <!--登录联想的最小输入值-->
+    <integer name="login_hint_mix_count">1</integer>
+
+    <!--#########################################     资讯相关      ################################-->
+    <!--完善文章信息最大输入值-->
+    <integer name="authorname_min">8</integer>
+
+</resources>

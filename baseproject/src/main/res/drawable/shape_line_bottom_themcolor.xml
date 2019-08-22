@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <solid android:color="@color/themeColor"/>
+    <!-- width 占位值，使用无效 -->
+    <size
+        android:width="50dp"
+        android:height="@dimen/spacing_tiny"
+        >
+    </size>
+</shape>

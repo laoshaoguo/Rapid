@@ -1,0 +1,1 @@
+include ':app', ':screenbadge', ':mysnackbar', ':rxerrorhandler', ':link-library', ':image-compress', ':common', ':pickerview', ':PhotoPicker', ':baseproject', ':baseadapter-recyclerview', ':overscrolllib', ':appupdate', ':ucrop'

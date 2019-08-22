@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewStub
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stub_toptip"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_top_tip_height"
+    android:inflatedId="@+id/tv_top_tip_text"
+    android:layout="@layout/view_top_tip"/>

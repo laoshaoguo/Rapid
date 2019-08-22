@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/input_view_bg_color">
+
+    <View
+        style="@style/style_divider_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_line"
+        android:padding="@dimen/spacing_normal">
+        <!--用来抢占焦点，并无其他作用-->
+        <EditText
+            android:id="@+id/et_empty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="text"/>
+
+        <com.zhiyicx.common.widget.SpanNoCursorEditTextView
+            android:id="@+id/et_content"
+            style="@style/style_edit_bg_line"
+            android:layout_toLeftOf="@+id/bt_send"
+            android:layout_toRightOf="@+id/iv_emoji"
+            tools:text="视卡鼓励进口大幅拉升刚刚加息公积金阿哥电视卡鼓励进口大幅拉刚刚加息公积金阿哥电视卡鼓励进口大幅拉刚刚加"
+            />
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ico_chat_keyboard_expression"/>
+
+        <TextView
+            android:id="@+id/bt_send"
+            android:layout_width="@dimen/button_send_with"
+            android:layout_height="@dimen/button_send_height"
+            android:layout_alignBottom="@id/et_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:background="@drawable/selector_button_corner_solid_small"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size_small"
+            />
+
+        <TextView
+            android:id="@+id/tv_limit_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bt_send"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_toRightOf="@+id/et_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_small"
+            android:textColor="@color/normal_for_assist_text"
+            android:textSize="@dimen/size_note_assist"
+            tools:text="210/255"/>
+
+        <!--<View-->
+        <!--android:layout_below="@+id/et_content"-->
+        <!--android:background="@color/themeColor"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"/>-->
+
+    </RelativeLayout>
+</FrameLayout>

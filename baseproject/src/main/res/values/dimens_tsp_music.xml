@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="music_album_detail_music_num_50dp">50dp</dimen>
+    <dimen name="music_album_detail_music_12dp">12dp</dimen>
+    <dimen name="music_album_detail_bottom_18dp">18dp</dimen>
+    <dimen name="music_album_detail_list_45dp">45dp</dimen>
+    <dimen name="music_album_detail_head_paddingtop_60dp">60dp</dimen>
+    <dimen name="music_album_detail_head_height_64dp">64dp</dimen>
+    <dimen name="music_play_head">110dp</dimen>
+    <!--#########################################      方形图片尺寸       ################################-->
+    <dimen name="music_album_detail_head">70dp</dimen>
+</resources>

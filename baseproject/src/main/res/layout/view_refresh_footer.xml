@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:id="@+id/fl_footer_container"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cursor_with"/>
+
+    <TextView
+        android:id="@+id/tv_no_moredata_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/load_more_height"
+        android:gravity="center"
+        android:text="@string/no_more_data"
+        android:textColor="@color/general_for_loading_more"
+        android:textSize="@dimen/size_icon_assist"/>
+</FrameLayout>
+
+

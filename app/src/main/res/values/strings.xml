@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">HaoHaiMusic</string>
+    <string name="default_delete_user_name">该用户已被删除</string>
+    <string name="ts_pay_check_handle_doing">处理中&#8230;</string>
+    <string name="transaction_success">交易成功</string>
+    <string name="ts_server_version_format">服务器当前版本号：%s</string>
+    <string name="defualt_golde_name">积分</string>
+    <!--#########################################      用户模块       ################################-->
+
+    <!--在生产模式下,移动端获取到1013,1014,1016错误码需要让用户重新登录. 如果登录后的用户获取到了1005错误码,也需要让用户重新登录. 如果登录后获取到了1015错误码,需要根据配置来决定是否让用户重新登录-->
+    <!--关联 issues 288 获取到闪退信息后,使用系统警告弹窗弹窗,只有一个红色的警告确定按钮,标题对照不同的错误码分为"你的账号已在别的设备登录!",以及,"你的账号已过期,请重新登录!"两种-->
+    <string name="code_1000">手机号码错误</string>
+    <string name="code_1001">手机验证码错误或失效</string>
+    <string name="code_1002">用户名长度错误</string>
+    <string name="code_1003">用户名格式错误</string>
+    <string name="code_1004">用户名已被使用</string>
+    <string name="code_1005">用户不存在（用户认证情况下）</string>
+    <string name="code_1006">密码错误</string>
+    <string name="code_1007">两次密码输入不一致</string>
+    <string name="code_1008">重复发送验证码时间未满足重发要求</string>
+    <string name="code_1009">发送手机验证码失败</string>
+    <string name="code_1010">手机号码已经被使用</string>
+    <string name="code_1011">获取验证码的类型错误</string>
+    <!--token过期，需要刷新-->
+    <string name="code_1012">@string/auth_fail_relogin</string>
+    <!--token刷新失败，需要重新登录-->
+    <string name="code_1013">@string/auth_fail_relogin</string>
+    <!--移动端设备登录/注册未传递设备号-->
+    <string name="code_1014">获取设备号失败，请 重新登陆</string>
+    <!--token在其他设备登录-->
+    <string name="code_1015">你的账号已在别的设备登录!</string>
+    <!--token不存在-->
+    <string name="code_1016">@string/auth_fail_relogin</string>
+    <string name="code_1017">用户资料字段类型不存在</string>
+    <string name="code_1018">关注操作目标user_id为空</string>
+    <string name="code_1019">目标用户不存在</string>
+    <string name="code_1020">用户已被关注</string>
+    <string name="code_1021">用户未被关注</string>
+    <string name="code_1022">不能对自己进行关注相关操作</string>
+    <string name="code_1023">关注相关列表的目标用户不存在</string>
+    <string name="code_1024">操作失败 请稍后重试</string>
+    <!--用户认证失败-->
+    <string name="code_1099">@string/auth_fail_relogin</string>
+    <string name="auth_fail_relogin">你的账号已过期,请重新登录!</string>
+
+
+    <!--音乐FM-->
+    <string name="music_fm">音乐FM</string>
+    <string name="single_music">单曲</string>
+    <string name="music_album">专辑</string>
+    <string name="music_lyric">暂无歌词</string>
+
+    <!--代码中的string-->
+    <string name="token_expiers">token过期，请重新登陆</string>
+    <string name="share">分享</string>
+    <string name="share_dynamic">%1$s 动态</string>
+    <string name="share_music">%1$s 音乐</string>
+    <string name="share_circle">等待你的加入!</string>
+    <string name="share_post">分享帖子</string>
+    <string name="favorite">收藏</string>
+    <string name="get_dynamic_dig_list_failure">获取点赞列表失败</string>
+    <string name="default_input_hint">随便说说~</string>
+    <string name="default_input_chat_hint">@string/default_input_hint</string>
+    <string name="see_origin_photos_failure">查看失败</string>
+
+    <string name="comment_format_reply">%1$s 回复 %2$s</string>
+    <string name="comment_format_reply_you">%s 回复了你</string>
+    <string name="comment_format_feed">%s 评论了你的动态</string>
+    <string name="comment_format_group_feed">%s 评论了你的帖子</string>
+    <string name="comment_format_music">%s 评论了你的音乐</string>
+    <string name="comment_format_music_specials">%s 评论了你的专辑</string>
+    <string name="comment_format_news">%s 评论了你的文章</string>
+    <string name="comment_format_questions">%s 评论了你的问题</string>
+    <string name="comment_format_questions_answer">%s 评论了你的回答</string>
+    <string name="new_apply_data">你有未审核的信息请及时处理</string>
+    <string name="no_apply_data">暂无未审核的申请</string>
+    <string name="resend">重新发送</string>
+    <string name="reply">回复 %s:</string>
+    <string name="reply_str">回复</string>
+
+    <!--动态列表-->
+    <string name="dynamic_list_more_comment">查看全部评论</string>
+    <string name="dynamic_list_delete_dynamic">删除动态</string>
+    <string name="dynamic_list_share_dynamic">分享</string>
+    <string name="dynamic_list_collect_dynamic">收藏</string>
+    <string name="dynamic_list_uncollect_dynamic">取消收藏</string>
+    <string name="dynamic_list_collected_dynamic">已收藏</string>
+    <string name="dynamic_list_excellent_post">设为精华帖</string>
+    <string name="dynamic_list_unexcellent_post">取消精华帖</string>
+    <string name="dynamic_list_report_dynamic">举报</string>
+    <string name="dynamic_list_delete_comment">删除评论</string>
+    <string name="dynamic_list_top_comment">申请评论置顶</string>
+    <string name="dynamic_list_stick_top_comment">置顶评论</string>
+    <string name="dynamic_list_resend_comment">重发评论</string>
+    <string name="delete_comment">删除评论</string>
+
+    <!--动态详情-->
+    <string name="dynamic_dig_count">%1$s人点赞</string>
+    <string name="dynamic_comment_count">%1$s条评论</string>
+    <string name="dynamic_publish_time">发布于%1$s</string>
+    <string name="dynamic_viewer_count">%1$s人浏览</string>
+    <string name="dynamic_like">喜欢</string>
+    <string name="dig_list">点赞列表</string>
+    <string name="comment_ing">评论中&#8230;</string>
+    <string name="comment_success">评论成功</string>
+    <string name="comment_fail">评论失败</string>
+
+    <string name="code_identify">code_%d</string>
+    <!--服务器返回的code，对应message映射表-->
+    <string name="code_not_define">未定义的错误码</string>
+    <!--测试用的 code ; 9999 作为移动端调试用错误码-->
+    <string name="code_9999">失败</string>
+</resources>

@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/wv_about_us"
+            android:background="@color/bgColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+
+    <ProgressBar
+        android:id="@+id/pb_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pb_height"
+        android:max="@integer/progressbar_max"
+        android:progressDrawable="@drawable/pb_webview_style"/>
+
+    <include
+        layout="@layout/include_empty_view"
+        />
+</FrameLayout>

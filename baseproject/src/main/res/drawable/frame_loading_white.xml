@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white000"/>
+            <item android:drawable="@mipmap/default_white0002"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white0002"/>
+            <item android:drawable="@mipmap/default_white0004"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white0004"/>
+            <item android:drawable="@mipmap/default_white0006"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white0006"/>
+            <item android:drawable="@mipmap/default_white0008"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white0008"/>
+            <item android:drawable="@mipmap/default_white000010"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white000010"/>
+            <item android:drawable="@mipmap/default_white000012"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white000012"/>
+            <item android:drawable="@mipmap/default_white000014"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white000014"/>
+            <item android:drawable="@mipmap/default_white000016"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white000016"/>
+            <item android:drawable="@mipmap/default_white000018"/>
+        </layer-list>
+    </item>
+
+    <item android:duration="100">
+        <layer-list>
+            <item android:drawable="@mipmap/default_white000018"/>
+            <item android:drawable="@mipmap/default_white000"/>
+        </layer-list>
+    </item>
+
+
+</animation-list>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--#########################################      动态相关       ################################-->
+    <dimen name="dynamic_one_image_max_with">248dp</dimen>
+    <dimen name="dynamic_one_image_max_height">290dp</dimen>
+    <dimen name="dynamic_menu_text_with">50dp</dimen>
+    <dimen name="dynamic_list_image_marginright">58dp</dimen>
+    <dimen name="dynamic_list_comment_marginright">40dp</dimen>
+    <!--dynamice_spacing_small  应该是 3 的倍数，便于计算动态中 6 张图片时的间距-->
+    <dimen name="dynamice_spacing_small">3dp</dimen>
+    <dimen name="dynamice_spacing_six_small">1dp</dimen>
+    <dimen name="dynamice_spacing_six_big">2dp</dimen>
+    <!--dynamice_more_comment_mariginleft 的值等于评论 tv_simple_text_comment 的marginleft + status image 的宽度 -->
+    <dimen name="dynamice_more_comment_mariginleft">18dp</dimen>
+    <!--分享弹框文字和图片的间距-->
+    <dimen name="share_image_text_padding">12dp</dimen>
+    <dimen name="dynamic_image_padding_bottom">15dp</dimen>
+    <!--图片查看器，查看原图按钮-->
+    <dimen name="origin_btn_width">76dp</dimen>
+    <dimen name="origin_btn_height">26dp</dimen>
+    <!--动态查看大图收费-->
+    <dimen name="dynamic_img_payto_look_width">100dp</dimen>
+    <dimen name="dynamic_img_payto_look_height">35dp</dimen>
+    <!--动态置顶标识-->
+    <dimen name="dynamic_top_flag_width">30dp</dimen>
+    <dimen name="dynamic_top_flag_height">15dp</dimen>
+</resources>

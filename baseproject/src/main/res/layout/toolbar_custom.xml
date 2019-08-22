@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/toolbar_height"
+    android:titleMargin="0dp"
+    android:background="@color/themeColor"
+    tools:ignore="UnusedAttribute">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:id="@+id/tv_toolbar_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:drawablePadding="@dimen/spacing_small"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/toolbar_center_margin"
+            android:layout_marginRight="@dimen/toolbar_center_margin"
+            android:textColor="@color/toolbar_text_corlor_normal"
+            android:textSize="@dimen/toolbar_center_text_size"
+            tools:text="至少添加一个话题吧"
+            />
+        <TextView
+            android:id="@+id/tv_toolbar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:drawablePadding="@dimen/spacing_small"
+            android:paddingLeft="@dimen/toolbar_padding_left"
+            android:paddingRight="@dimen/toolbar_padding_right"
+            android:textColor="@color/toolbar_text_corlor_normal"
+            android:textSize="@dimen/toolbar_left_text_size"
+            tools:text="左边"
+            />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_toolbar_left"
+            android:src="@drawable/frame_loading_grey"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_toolbar_right_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_toolbar_right"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:drawablePadding="@dimen/spacing_small"
+            android:paddingLeft="@dimen/toolbar_padding_left"
+            android:textColor="@color/selector_theme_color_toolbar_text_color"
+            android:textSize="@dimen/toolbar_right_text_size"
+            tools:text="右边"
+            />
+
+        <TextView
+            android:id="@+id/tv_toolbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:drawablePadding="@dimen/spacing_small_1dp"
+            android:paddingLeft="@dimen/toolbar_padding_left"
+            android:paddingRight="@dimen/toolbar_padding_right"
+            android:textColor="@color/selector_theme_color_toolbar_text_color"
+            android:textSize="@dimen/toolbar_right_text_size"
+            tools:text="右边"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

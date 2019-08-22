@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bt_normal">@color/themeColor</color>
+    <color name="bt_disable">@color/general_for_hint</color>
+    <color name="bt_pressed">#4ab2ce</color>
+    <color name="bt_pressed_hollow">#4ab2ce</color>
+
+    <color name="bt_normal_money">@color/money</color>
+    <color name="bt_pressed_money">#ec3f3b</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      聊天相关       ################################-->
+    <!--  横向布局 -->
+    <style name="style_dynamic_list_image_horizen">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/shape_default_image</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!--  横向布局 -->
+    <style name="style_dynamic_list_image_vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:src">@drawable/shape_default_image</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+</resources>

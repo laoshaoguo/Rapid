@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_button_corner_circle_disable_solid_small" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/shape_button_corner_circle_press_solid_small" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/shape_button_corner_circle_normal_solid_small"></item>
+</selector>
+

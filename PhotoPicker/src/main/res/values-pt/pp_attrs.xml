@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--有按下效果的Imageview-->
+    <declare-styleable name="GifTagImageView">
+        <attr name="pressColor" format="reference|color"/>
+        <attr name="pressShape">
+            <enum name="square" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable></resources>

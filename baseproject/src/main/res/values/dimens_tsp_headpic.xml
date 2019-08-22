@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      头像尺寸       ################################-->
+
+    <!--
+    用户个人主页头像
+    -->
+    <dimen name="headpic_for_user_home">70dp</dimen>
+    <!--
+    个人中心头像
+    -->
+    <dimen name="headpic_for_user_center">60dp</dimen>
+    <dimen name="headpic_for_answer">38dp</dimen>
+    <!--
+    使用场景：动态/消息/赞过的/排行榜/粉丝/消息评论的 列
+    表头像、聊详情页头像、修改资料-更换头像
+    -->
+    <dimen name="headpic_for_list">38dp</dimen>
+    <dimen name="headpic_for_recomment_list">50dp</dimen>
+
+    <dimen name="headpic_for_question_list">20dp</dimen>
+    <!--
+   使用场景：动态详情页-顶部标题栏/最新点赞人/详情页评论
+    列表头像
+    注：最新点赞人头像描边3px #ffffff,重叠区域宽度20px
+    -->
+    <dimen name="headpic_for_assist">28dp</dimen>
+    <!--
+       使用场景：消息-> 通知，评论的点赞的等
+    -->
+    <dimen name="headpic_for_notification">32dp</dimen>
+    <dimen name="headpic_for_notification_30dp">32dp</dimen>
+    <dimen name="headpic_for_notification_28dp">28dp</dimen>
+</resources>

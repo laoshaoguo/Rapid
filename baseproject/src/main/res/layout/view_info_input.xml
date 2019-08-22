@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/certification_input_item_height"
+                android:background="@color/white">
+
+    <!--是否必填-->
+    <TextView
+            android:id="@+id/tv_flag_required"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:paddingTop="@dimen/spacing_tiny"
+            android:textSize="@dimen/size_content_assist"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spacing_mid"
+            android:layout_centerVertical="true"/>
+
+    <TextView
+            android:id="@+id/tv_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/important_for_content"
+            android:textSize="@dimen/size_content_assist"
+            android:layout_toRightOf="@+id/tv_flag_required"
+            android:layout_centerVertical="true"
+            tools:text="xxxxx"/>
+
+
+    <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textColorHint="@color/general_for_hint"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_left_text"
+            style="@style/style_edit"
+            android:textSize="@dimen/size_content_assist"
+            tools:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+
+    <View
+            android:id="@+id/iv_bottom_diver"
+            style="@style/style_divider_horizontal_light"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

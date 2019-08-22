@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      重要的颜色       ################################-->
+
+    <!--
+    主题色-需要特别强调的文字、icon、按钮:
+    例如底部导航栏高亮按钮、顶部标题栏右侧可点击状态文字按钮
+    、文章标题、填充类色块按钮、粉丝/点赞/关注/喜欢数 等
+    -->
+    <color name="important_for_theme">#59b6d7</color>
+    <!--
+    重要的列表标题文字、正文内容:
+    例如标题栏标题、个人中心类列表项文字、用户昵称、聊天详情页聊天内容
+    、弹窗内重要文字、详情页正文文字 等
+    -->
+    <color name="important_for_content">#333333</color>
+    <!--
+    少量使用-点赞心形图标高亮、新消息提示、警告
+    -->
+    <color name="important_for_note">#f4504d</color>
+
+    <!--#########################################    普通的颜色         ################################-->
+
+    <!--
+     首页 动态列表 动态内容文字
+       -->
+    <color name="normal_for_dynamic_list_content">#666666</color>
+    <!--
+    用于辅助、次要的信息、图标等：
+    例如用户列表页用户简介、个人中心/主页 简介、评论内容、不重要的按钮（取消）、消息列表消息内容、粉丝/关注列表
+    粉丝数、相册列表照片张数 等
+      -->
+    <color name="normal_for_assist_text">#999999</color>
+    <!--
+    浏览量、点赞图标及其文字、动态详情页底部操作栏图标及文字、不可点击状态下文字按钮等
+    -->
+    <color name="normal_for_disable_button_text">#b2b2b2</color>
+    <color name="normal_for_disable_button_b3_text">#b3b3b3</color>
+    <color name="qa_niming">#a2a2a2</color>
+    <!--#########################################      一般的颜色       ################################-->
+
+    <!--
+    时间、提示文字、色块类按钮不可点击状态 等次要信息
+    -->
+    <color name="general_for_hint">#cccccc</color>
+    <color name="general_for_hint_alpha">#80cccccc</color>
+    <!--
+    稍明显的分割线，少量使用
+    顶部标题栏、底部操作栏灰色分割线、键盘升起的分割线、拍照框的描边
+    -->
+    <color name="general_for_line">#dedede</color>
+    <color name="general_for_light_line">#f2f2f2</color>
+    <!--搜索框背景-->
+    <color name="general_for_search_bg">#ebebeb</color>
+    <!--
+    稍低调的分割线，广泛使用,占位图
+    页面内的浅色分割线
+    -->
+    <color name="general_for_line_light">#ededed</color>
+    <!--
+    页面的浅灰色背景，标签、热门城市背景色
+    -->
+    <color name="general_for_bg_light">#f4f5f5</color>
+    <color name="general_for_bg_light_f7">#f7f7f7</color>
+    <color name="general_for_bg_light_alpha_0.5">#80f4f5f5</color>
+
+    <color name="general_for_loading_more">#b3b3b3</color>
+    <!--#########################################      特殊颜色       ################################-->
+
+    <!--20%蒙层颜色-->
+    <color name="masked_color">#33000000</color>
+    <color name="shadow_color">#aa000000</color>
+    <color name="copy_right_color">#f3f6f7</color>
+    <color name="input_view_bg_color">#fafafa</color>
+    <color name="tag_bg_color">#def0f7</color>
+    <color name="tag_gray_bg_color">#efefef</color>
+    <!--money-->
+    <color name="money">#f76c69</color>
+    <color name="money_gold">#ff9400</color>
+    <color name="money_gold_light">#fca308</color>
+
+    <!--voice length-->
+    <color name="text_voice_send_length">#4d4d4d</color>
+    <color name="text_voice_receive_length">#9b9b9b</color>
+    <color name="text_location_title_background">#ffffff</color>
+
+    <!-- 资讯详情关注 颜色 -->
+    <color name="info_detail_follow">#7bc5df</color>
+</resources>

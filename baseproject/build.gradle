@@ -1,0 +1,128 @@
+apply plugin: 'com.android.library'
+android {
+    def gConfig = rootProject.extensions.getByName("ext")
+    compileSdkVersion gConfig["compileSdkVersion"]
+    buildToolsVersion gConfig["buildToolsVersion"]
+    defaultConfig {
+        minSdkVersion gConfig["minSdkVersion"]
+        targetSdkVersion gConfig["targetSdkVersion"]
+        versionCode gConfig["versionCode"]
+        versionName gConfig["versionName"]
+        testInstrumentationRunner gConfig.testDependencies.androidJUnitRunner
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 三方 key
+            manifestPlaceholders = [
+                    TECENT_APPID  : 1105978541, // 腾讯 QQ id
+                    UMENG_APPKEY  : "58d0998e9f06fd05680011f6", // 友盟三方key配置
+                    AMAP_APPKEY   : "e954e82021efe2f4d334879cff3880cf", // 高德三方配置
+//                    EASEMOB_APPKEY: "1139171207178196#test-plus", // 环信三方配置(测试key)
+                    EASEMOB_APPKEY: "1139171207178196#thinksns-plus", // 环信三方配置
+            ]
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 三方 key
+            manifestPlaceholders = [
+                    TECENT_APPID  : 1105978541, // 腾讯 QQ id
+                    UMENG_APPKEY  : "58d0998e9f06fd05680011f6", // 友盟三方key配置
+                    AMAP_APPKEY   : "e954e82021efe2f4d334879cff3880cf", // 高德三方配置
+                    EASEMOB_APPKEY: "1139171207178196#test-plus", // 环信三方配置(测试key)
+//                    EASEMOB_APPKEY: "1139171207178196#thinksns-plus", // 环信三方配置
+
+
+            ]
+        }
+    }
+    lintOptions {
+        abortOnError false
+        // if true, only report errors.
+        ignoreWarnings true
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-annotations:25.0.1'
+        force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+}
+/** 升级gradle后下面两个包冲突*/
+configurations {
+    all*.exclude module: 'jsr305'
+//    all*.exclude module: 'javapoet'
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    def dataDependences = rootProject.ext.dataDependencies
+    def testDependences = rootProject.ext.testDependencies
+
+    // Dagger dependencies
+    api(dataDependences.recyclerviewAnimator) {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+
+    }
+    // Test
+    androidTestImplementation(testDependences.espresso) {
+        exclude module: 'support-annotations'
+        exclude group: 'javax.inject'
+    }
+    annotationProcessor dataDependences.daggerCompiler
+
+    testImplementation testDependences.robolectric
+    testImplementation testDependences.mockito
+    androidTestImplementation testDependences.mockito
+    androidTestImplementation testDependences.dexmaker
+    androidTestImplementation testDependences.dexmakerMockito
+
+    api dataDependences.swipeLayout
+    api dataDependences.umeng
+    api dataDependences.amapLocation
+    api dataDependences.amapSearch
+    api dataDependences.a2Dmap
+    api dataDependences.playServicesBase
+    // 扫码
+    api dataDependences.zxing
+    api dataDependences.bgaQrcodecore
+    api dataDependences.bgaZxing
+    // Project
+    api project(':common')
+    api project(':baseadapter-recyclerview')
+    api project(':PhotoPicker')
+    api project(':pickerview')
+    api project(':overscrolllib')
+    api project(':ucrop')
+    api dataDependences.refresh
+    api dataDependences.refreshHeader
+
+}
+
+repositories {
+    maven {
+        url 'https://maven.google.com'
+    }
+}

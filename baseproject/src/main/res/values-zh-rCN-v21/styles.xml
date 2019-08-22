@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="TSTheme"  parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/themeColor</item>
+        <item name="colorPrimaryDark">@color/themeColor</item>
+        <!--导航栏上的标题颜色-->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/bgColor</item>
+        <item name="alertDialogTheme">@style/TSAlertDialogStyle</item>
+        <item name="toolbarStyle" tools:ignore="NewApi">@style/TSToolBar</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/share_element_move</item>
+        <item name="android:windowSharedElementExitTransition">@transition/share_element_move</item>
+    </style>
+</resources>

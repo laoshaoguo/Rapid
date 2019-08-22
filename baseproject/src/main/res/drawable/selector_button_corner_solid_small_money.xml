@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_button_corner_disable_solid_small_money" android:state_enabled="false" />
+    <item android:drawable="@drawable/shape_button_corner_press_solid_small_money" android:state_pressed="true" />
+    <item android:drawable="@drawable/shape_button_corner_normal_solid_small_money" />
+</selector>

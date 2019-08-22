@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_music_list_item">
+
+    <com.zhiyicx.baseproject.widget.imageview.SquareImageView
+        android:id="@+id/music_list_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/music_list_taste_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@mipmap/music_ico_playvolume"
+        android:drawablePadding="@dimen/spacing_small_4dp"
+        android:padding="@dimen/spacing_normal"
+        android:textColor="@color/white"/>
+
+    <View
+        style="@style/style_divider_horizontal_light"
+        android:layout_below="@+id/music_list_image"/>
+
+    <TextView
+        android:id="@+id/music_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_list_image"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_normal"
+        android:paddingBottom="@dimen/spacing_mid"
+        android:paddingLeft="@dimen/spacing_mid_small_8dp"
+        android:paddingRight="@dimen/spacing_mid_small_8dp"
+        android:paddingTop="@dimen/spacing_mid"
+        android:textColor="@color/normal_for_dynamic_list_content"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:src="@mipmap/pic_layer_transparent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@mipmap/musici_pic_pay01"
+        android:id="@+id/music_list_toll_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

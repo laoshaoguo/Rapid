@@ -1,0 +1,150 @@
+apply plugin: 'com.android.library'
+android {
+    def gConfig = rootProject.extensions.getByName("ext")
+    compileSdkVersion gConfig["compileSdkVersion"]
+    buildToolsVersion gConfig["buildToolsVersion"]
+    defaultConfig {
+        minSdkVersion gConfig["minSdkVersion"]
+        targetSdkVersion gConfig["targetSdkVersion"]
+        versionCode gConfig["versionCode"]
+        versionName gConfig["versionName"]
+        testInstrumentationRunner gConfig.testDependencies.androidJUnitRunner
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "USE_DOMAIN_SWITCH", "false"  // 域名切换开关，用于配置测试服务器地址
+            buildConfigField "boolean", "USE_LOG", "true"            // 日志开关
+            buildConfigField "boolean", "USE_CANARY", "false"         // Learcanary 内存检查开关
+            buildConfigField "boolean", "USE_ADVERT", "true"         // 广告开关
+            buildConfigField "boolean", "USE_TOLL", "true"           // 置顶功能开关
+            buildConfigField "boolean", "USE_MUSIC", "true"           // 音乐功能开关
+            buildConfigField "boolean", "USE_LOCAL_USER", "true" // 是否使用本地用户信息
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "boolean", "USE_DOMAIN_SWITCH", "true"  // 域名切换开关
+            buildConfigField "boolean", "USE_LOG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            buildConfigField "boolean", "USE_ADVERT", "true"
+            buildConfigField "boolean", "USE_TOLL", "true"
+            buildConfigField "boolean", "USE_MUSIC", "true" // 音乐功能开关
+            buildConfigField "boolean", "USE_LOCAL_USER", "true" // 是否使用本地用户信息
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+        // if true, only report errors.
+        ignoreWarnings true
+    }
+
+}
+
+
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.ext.kotlin_version"
+        force 'com.android.support:support-annotations:25.0.1'
+        force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    def testDependences = rootProject.ext.testDependencies
+    def dataDependences = rootProject.ext.dataDependencies
+    def sdkSoupportDependences = rootProject.ext.sdksoupportDependencies
+    def developmentDependencies = rootProject.ext.developmentDependencies
+    // Sdksoupport dependencies
+    api sdkSoupportDependences.appcompatV7
+    api sdkSoupportDependences.supportV4
+    api sdkSoupportDependences.design
+    api sdkSoupportDependences.recyclerview
+    api sdkSoupportDependences.rxpermissions
+    api sdkSoupportDependences.annotations
+    // Butterknife
+    api dataDependences.butterknife
+    // Image
+    api dataDependences.glide
+    api dataDependences.glideOkhttpIntegration
+    api dataDependences.okhttp3
+
+    // Eventbus
+    api dataDependences.androideventbus
+    // Log
+    api dataDependences.logger
+    // Dagger dependencies
+    implementation dataDependences.dagger
+    compileOnly dataDependences.javaxAnnotation
+    annotationProcessor dataDependences.daggerCompiler
+    // Retrofit + rx + gson
+    api dataDependences.retrofit
+    api dataDependences.retrofitConverterGson
+    api dataDependences.retorfitConverterScalar
+    api dataDependences.retrofitAdapterRxJava
+    api dataDependences.rxJava
+    api dataDependences.rxAndroid
+    api dataDependences.rxlifecycle
+    api dataDependences.rxlifecycleAndroid
+    api dataDependences.rxlifecycleComponents
+    api dataDependences.rxlifecycleNavi
+    api dataDependences.rxlifecycleKotlin
+    api dataDependences.kotlin
+    api dataDependences.rxcache
+    api dataDependences.rxcacheJolyglotGson
+    api dataDependences.rxbinding
+    api dataDependences.rxbindingSupportV4
+    api dataDependences.rxbindingSupportV7
+    api dataDependences.rxbindingDesign
+    api dataDependences.rxbindingDesignrRcyclerviewV7
+    //    compile dataDependences.clickSpanLink // click span
+    api dataDependences.gson
+    // Development
+    debugImplementation developmentDependencies.leakCanaryDebug
+    releaseImplementation developmentDependencies.leakCanaryRelease
+    // Test
+    testImplementation testDependences.junit
+    androidTestImplementation(testDependences.espresso) {
+        exclude module: 'support-annotations'
+    }
+    testImplementation testDependences.runner
+    testImplementation testDependences.robolectric
+    api testDependencies.espressoIdling
+    // Project
+    api project(':rxerrorhandler')
+    //分包
+    api dataDependences.multidex
+    testImplementation testDependencies.multidexTest
+    api project(':mysnackbar')
+    api project(':screenbadge')
+    api project(':link-library')
+    // 指示器
+    api dataDependences.magicIndicator
+    // skin
+    api dataDependences.skin
+    api dataDependences.skinDesign
+    api dataDependences.skinCardveiw
+    // font
+    api dataDependences.calligraphyFont
+    api project(':image-compress')
+}

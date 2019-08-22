@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--启动广告-->
+    <dimen name="launch_advert_width">63dp</dimen>
+    <dimen name="launch_advert_height">21dp</dimen>
+    <dimen name="channel_advert_height">90dp</dimen>
+
+</resources>

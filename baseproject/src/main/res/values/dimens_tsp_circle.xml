@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#########################################      圈子       ################################-->
+    <!--创建圈子-头像高度-->
+    <dimen name="create_circle_head_width">45dp</dimen>
+    <!--创建圈子-选框高度-->
+    <dimen name="create_circle_button_height">50dp</dimen>
+    <!--创建圈子-备注高度-->
+    <dimen name="create_circle_ps_height">30dp</dimen>
+    <!--创建圈子-位置-->
+    <dimen name="create_circle_location">58dp</dimen>
+    <!--圈子详情顶部距离-->
+    <dimen name="circle_detail_header_magin">80dp</dimen>
+    <!--圈子详情头像宽度-->
+    <dimen name="circle_detail_head_iamge_height">66dp</dimen>
+    <!--圈子成员管理头像-->
+    <dimen name="circle_member_head">38dp</dimen>
+</resources>

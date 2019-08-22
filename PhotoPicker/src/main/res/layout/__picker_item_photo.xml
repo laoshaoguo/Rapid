@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+    >
+    <!-- android:background="@drawable/__picker_photo_bg"-->
+    <me.iwf.photopicker.widget.GifTagImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/v_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:padding="@dimen/__picker_spacing_small"
+        android:transitionName="trans_photo"
+        android:src="@drawable/__picker_checkbox_bg"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/ll_dynamic_list_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_mid"
+        android:paddingTop="@dimen/spacing_mid">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_list_like"
+            android:layout_width="@dimen/icon_for_assist_small"
+            android:layout_height="@dimen/icon_for_assist_small"
+            tool:src="@mipmap/home_ico_good_normal"
+            />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_dynamic_list_like"
+            android:layout_width="@dimen/dynamic_menu_text_with"
+            android:layout_height="@dimen/icon_for_assist_small"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/spacing_tiny"
+            android:layout_marginTop="@dimen/textview_spacing_offset_height"
+            android:textColor="@color/normal_for_disable_button_text"
+            android:textSize="@dimen/size_icon_assist"
+            tool:text="1284万"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic_list_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_mid"
+        android:paddingTop="@dimen/spacing_mid">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_list_comment"
+            android:layout_width="@dimen/icon_for_assist_small"
+            android:layout_height="@dimen/icon_for_assist_small"
+            tool:src="@mipmap/home_ico_comment_normal"
+            />
+
+        <TextView
+            android:id="@+id/tv_dynamic_list_comment"
+            android:layout_width="@dimen/dynamic_menu_text_with"
+            android:layout_height="@dimen/icon_for_assist_small"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/spacing_tiny"
+            android:layout_marginTop="@dimen/textview_spacing_offset_height"
+            android:textColor="@color/normal_for_disable_button_text"
+            android:textSize="@dimen/size_icon_assist"
+            tool:text="1284万"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic_list_pageviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_mid"
+        android:paddingTop="@dimen/spacing_mid">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_list_pageviews"
+            android:layout_width="@dimen/icon_for_assist_small"
+            android:layout_height="@dimen/icon_for_assist_small"
+            tool:src="@mipmap/home_ico_eye_normal"
+            />
+
+        <TextView
+            android:id="@+id/tv_dynamic_list_pageviews"
+            android:layout_width="@dimen/dynamic_menu_text_with"
+            android:layout_height="@dimen/icon_for_assist_small"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/spacing_tiny"
+            android:layout_marginTop="@dimen/textview_spacing_offset_height"
+            android:textColor="@color/normal_for_disable_button_text"
+            android:textSize="@dimen/size_icon_assist"
+            tool:text="1284万"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_dynamic_list_more"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_list_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingBottom="@dimen/spacing_mid"
+            android:paddingLeft="@dimen/spacing_mid"
+            android:paddingTop="@dimen/spacing_mid"
+            tool:src="@mipmap/home_ico_more"
+            />
+    </FrameLayout>
+</merge>
+

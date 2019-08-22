@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_channel_list_height"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/spacing_mid"
+        android:paddingLeft="@dimen/spacing_normal"
+        android:paddingRight="@dimen/spacing_normal"
+        android:paddingTop="@dimen/spacing_mid">
+
+        <ImageView
+            android:id="@+id/head_info_music_comment"
+            android:layout_width="@dimen/rec_image_for_list_normal"
+            android:layout_height="@dimen/rec_image_for_list_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_mid"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_default_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/head_info_music_arrow"
+            android:layout_toRightOf="@+id/head_info_music_comment"
+            android:orientation="vertical">
+
+            <com.zhiyicx.thinksnsplus.widget.NoDefaultPadingTextView
+                android:id="@+id/head_info_music_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="2"
+                android:text="流动性捉襟见肘，新三板如履薄冰"
+                android:textColor="@color/important_for_content"
+                android:textSize="@dimen/size_sub_title"/>
+
+            <TextView
+                android:id="@+id/head_info_music_listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/music_ico_playvolume_blue"
+                android:drawablePadding="@dimen/spacing_small"
+                android:text="488"
+                android:textColor="@color/important_for_theme"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/head_info_music_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_mid"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_arrow_smallgrey"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/head_info_music_comment_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/spacing_mid"
+                android:paddingBottom="@dimen/spacing_mid"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingRight="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_mid"
+                android:textColor="@color/important_for_content"
+                android:textSize="@dimen/size_content_assist"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_line_bottom_themcolor"/>
+        </LinearLayout>
+
+        <View
+            style="@style/style_divider_horizontal_light"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+</LinearLayout>

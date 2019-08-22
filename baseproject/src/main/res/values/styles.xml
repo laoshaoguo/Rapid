@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="TSTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/themeColor</item>
+        <item name="colorPrimaryDark">@color/themeColor</item>
+        <!--导航栏上的标题颜色-->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/bgColor</item>
+        <item name="alertDialogTheme">@style/TSAlertDialogStyle</item>
+        <item name="toolbarStyle" tools:ignore="NewApi">@style/TSToolBar</item>
+    </style>
+    <!--修改系统dialog样式-->
+    <style name="TSAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/themeColor</item>
+        <!-- Used for the title and text -->
+        <!--<item name="android:textColorPrimary">#FFFFFF</item>-->
+        <!-- Used for the background -->
+        <!--<item name="android:background">#4CAF50</item>-->
+    </style>
+    <!--修改系统dialog样式-->
+    <style name="TSWarningAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/important_for_note</item>
+        <!-- Used for the title and text -->
+        <!--<item name="android:textColorPrimary">#FFFFFF</item>-->
+        <!-- Used for the background -->
+        <!--<item name="android:background">#4CAF50</item>-->
+    </style>
+
+    <style name="TSToolBar" parent="Widget.AppCompat.Toolbar">
+        <!--左边边距-->
+        <item name="contentInsetStart">0dp</item>
+    </style>
+    <!--TranslucentLAUNCHER theme 启动页主题-->
+    <style name="TranslucentLauncherTheme" parent="android:Theme.Translucent.NoTitleBar.Fullscreen"/>
+    <!--BackGroundLauncherTheme theme 启动页主题-->
+    <style name="BackGroundLauncherTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:screenOrientation">portrait</item>
+        <!--<item name="android:windowBackground">>@mipmap/splash</item>-->
+        <item name="android:windowBackground">@mipmap/guide</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--加载框Dialog的样式-->
+    <style name="loadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- Activity全屏 -->
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Translucent" parent="TSTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>
