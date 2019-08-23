@@ -49,13 +49,24 @@
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
         <!--音乐播发-->
         <activity
+            android:name=".modules.music_fm.music_play.MusicPlayActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
             android:screenOrientation="portrait"
-            android:name=".modules.music_fm.music_play.MusicPlayActivity"/>
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
         <activity
-            android:screenOrientation="portrait"
-            android:name=".modules.music_fm.paided_music.MyMusicActivity"/>
+            android:name=".modules.music_fm.paided_music.MyMusicActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--音乐播放后台服务-->
+        <service
+            android:name=".modules.music_fm.music_play.MusicPlayService"
+            android:exported="true"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

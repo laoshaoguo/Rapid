@@ -4,6 +4,7 @@ import android.content.Intent;
 
 import com.haohaishengshi.haohaimusic.base.AppApplication;
 import com.zhiyicx.baseproject.base.TSActivity;
+import com.zhiyicx.baseproject.impl.share.ShareModule;
 import com.zhiyicx.baseproject.impl.share.UmengSharePolicyImpl;
 
 import static com.haohaishengshi.haohaimusic.modules.music_fm.music_album_detail.MusicDetailFragment.MUSIC_INFO;
@@ -20,8 +21,8 @@ public class MusicPlayActivity extends TSActivity<MusicPlayPresenter, MusicPlayF
         DaggerMusicPlayComponent.builder()
                 .appComponent(AppApplication.AppComponentHolder.getAppComponent())
                 .musicPlayPresenterModule(new MusicPlayPresenterModule(mContanierFragment))
-//                .shareModule(new ShareModule(this))
-                .shareModule(null)
+                .shareModule(new ShareModule(this))
+//                .shareModule(null)
                 .build()
                 .inject(this);
     }

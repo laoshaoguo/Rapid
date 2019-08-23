@@ -51,7 +51,7 @@ public class TouristConfig {
     /**
      * 是否可以播放音乐
      */
-    public static final boolean MUSIC_CAN_PLAY = false;
+    public static final boolean MUSIC_CAN_PLAY = true;
     /**
      * 是否可以进入购物页面
      */

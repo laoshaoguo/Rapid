@@ -240,7 +240,7 @@ public class LocalPlayback implements Playback, AudioManager.OnAudioFocusChangeL
                     mMediaPlayer.setDataSource(proxyUrl);
                 } else {
                     Map<String, String> header = new HashMap<>();
-                    header.put("Authorization", " Bearer " + AppApplication.getmCurrentLoginAuth().getToken());
+                    header.put("Authorization", " Bearer " /*+ AppApplication.getmCurrentLoginAuth().getToken()*/);
                     Uri uri = Uri.parse(source);
                     mMediaPlayer.setDataSource(mContext, uri, header);
                 }

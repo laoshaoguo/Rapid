@@ -23,28 +23,27 @@
             android:animateLayoutChanges="true">
 
             <ScrollView
-                android:fillViewport="true"
                 android:id="@+id/fragment_music_paly_lrc_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="20dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="@dimen/spacing_normal"
                 android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:fillViewport="true"
                 android:requiresFadingEdge="vertical">
 
                 <TextView
                     android:id="@+id/fragment_music_paly_lrc"
                     android:layout_width="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:gravity="center"
                     android:visibility="gone"/>
 
             </ScrollView>
 
-            <com.zhiyicx.thinksnsplus.widget.pager_recyclerview.LoopPagerRecyclerView
+            <com.haohaishengshi.haohaimusic.widget.pager_recyclerview.LoopPagerRecyclerView
                 android:id="@+id/fragment_music_paly_rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
