@@ -576,7 +576,7 @@ public class MusicPlayFragment extends TSFragment<MusicPlayContract.Presenter> i
      */
     private void updateMediaDescription(final MediaDescription description) {
         if (description != null) {
-            mMediaDescription = description;
+//            mMediaDescription = description;
 //            mImageLoader.loadImage(getActivity(), GlideImageConfig.builder()
 //                    .transformation(new GlideMusicBgTransform(getActivity()))
 //                    .errorPic(R.drawable.shape_default_image)
@@ -584,18 +584,18 @@ public class MusicPlayFragment extends TSFragment<MusicPlayContract.Presenter> i
 //                    .imagerView(mFragmentMusicPalyBg)
 //                    .url(description.getIconUri() + "")
 //                    .build());
-//
-//            View item = RecyclerViewUtils
-//                    .getCenterXChild(mFragmentMusicPalyRv);
 
-//            mCurrentImageView = (ImageView) item.findViewById(R.id.fragment_music_paly_img);
-//
-//            mImageLoader.loadImage(getActivity(), GlideImageConfig.builder()
-//                    .imagerView(mCurrentImageView)
-//                    .errorPic(R.drawable.shape_default_image)
-//                    .placeholder(R.drawable.shape_default_image)
-//                    .url(description.getIconUri() + "")
-//                    .build());
+            View item = RecyclerViewUtils
+                    .getCenterXChild(mFragmentMusicPalyRv);
+
+            mCurrentImageView = item.findViewById(R.id.fragment_music_paly_img);
+
+            mImageLoader.loadImage(getActivity(), GlideImageConfig.builder()
+                    .imagerView(mCurrentImageView)
+                    .errorPic(R.drawable.shape_default_image)
+                    .placeholder(R.drawable.shape_default_image)
+                    .url(description.getIconUri() + "")
+                    .build());
 
         }
 
