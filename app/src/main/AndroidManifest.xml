@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.haohaishengshi.haohaimusic">
-
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.haohaishengshi.haohaimusic">
 
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -25,27 +25,28 @@
 
     <application
         android:name=".base.AppApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
         <activity android:name="com.haohaishengshi.haohaimusic.modules.music_fm.music_album_list.MusicListActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-
         <!--音乐详情-->
         <activity
+            android:name=".modules.music_fm.music_album_detail.MusicDetailActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
-            android:name=".modules.music_fm.music_album_detail.MusicDetailActivity"/>
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
 
     </application>
 
