@@ -3,8 +3,6 @@ package com.haohaishengshi.haohaimusic.data.source.local.db;
 import android.content.Context;
 
 import com.haohaishengshi.haohaimusic.data.beans.DaoMaster;
-import com.haohaishengshi.haohaimusic.data.beans.MusicAlbumDetailsBeanDao;
-import com.haohaishengshi.haohaimusic.data.beans.MusicCommentListBeanDao;
 import com.haohaishengshi.haohaimusic.data.beans.UserInfoBeanDao;
 import com.zhiyicx.common.utils.log.LogUtils;
 
@@ -30,8 +28,5 @@ public class UpDBHelper extends DaoMaster.OpenHelper {
                 "Upgrading schema from version " + oldVersion + " to " + newVersion + " by migrating all tables data");
         // 每次升级，将需要更新的表进行更新，第二个参数为要升级的Dao文件.
         MigrationHelper.getInstance().migrate(db, UserInfoBeanDao.class);
-        MigrationHelper.getInstance().migrate(db, MusicCommentListBeanDao.class);
-        MigrationHelper.getInstance().migrate(db, MusicCommentListBeanDao.class);
-        MigrationHelper.getInstance().migrate(db, MusicAlbumDetailsBeanDao.class);
     }
 }

@@ -84,7 +84,8 @@ public class NestedScrollLineayLayout extends LinearLayout implements NestedScro
     protected void onFinishInflate() {
         super.onFinishInflate();
         if (headerView == null) {
-            headerView = findViewById(R.id.nestedscroll_target);
+            // 使用控件时先在xml添加id，再解开注释
+//            headerView = findViewById(R.id.nestedscroll_target);
         }
         if (headerView == null) {
             throw new RuntimeException("headerView can not be null");

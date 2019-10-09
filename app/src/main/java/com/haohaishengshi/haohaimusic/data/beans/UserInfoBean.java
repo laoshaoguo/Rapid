@@ -56,14 +56,6 @@ public class UserInfoBean extends BaseListBean implements Parcelable, Serializab
      * "updated_at": "2017-07-16 09:44:25", // 更新时间
      * "feeds_count": 0 // 发布的动态统计，没有安装 动态应用则不存在
      * },
-     * "wallet": {
-     * "id": 1,
-     * "user_id": 1,
-     * "balance": 90, // 用户余额
-     * "created_at": "2017-06-02 08:43:54",
-     * "updated_at": "2017-07-05 08:29:49",
-     * "deleted_at": null
-     * }
      * }
      */
     // 定义四种性别状态
@@ -105,9 +97,6 @@ public class UserInfoBean extends BaseListBean implements Parcelable, Serializab
     @SerializedName(value = "cover", alternate = {"bg"})
     @Convert(converter = AvatarConvert.class, columnType = String.class)
     private Avatar cover;// 封面
-    @Transient
-    @SerializedName("new_wallet")
-    private WalletBean wallet;
     /**
      * 积分
      */
@@ -368,14 +357,6 @@ public class UserInfoBean extends BaseListBean implements Parcelable, Serializab
         this.cover = cover;
     }
 
-    public WalletBean getWallet() {
-        return wallet;
-    }
-
-    public void setWallet(WalletBean wallet) {
-        this.wallet = wallet;
-    }
-
     public boolean isFollowing() {
         return following;
     }
@@ -449,6 +430,7 @@ public class UserInfoBean extends BaseListBean implements Parcelable, Serializab
     public UserInfoBean(String name) {
         this.name = name;
     }
+
     public UserInfoBean(Long id) {
         this.user_id = id;
     }
@@ -809,7 +791,6 @@ public class UserInfoBean extends BaseListBean implements Parcelable, Serializab
         dest.writeParcelable(this.avatar, flags);
         dest.writeString(this.localAvatar);
         dest.writeParcelable(this.cover, flags);
-        dest.writeParcelable(this.wallet, flags);
         dest.writeSerializable(this.currency);
         dest.writeParcelable(this.extra, flags);
         dest.writeParcelable(this.verified, flags);
@@ -844,7 +825,6 @@ public class UserInfoBean extends BaseListBean implements Parcelable, Serializab
         this.avatar = in.readParcelable(Avatar.class.getClassLoader());
         this.localAvatar = in.readString();
         this.cover = in.readParcelable(Avatar.class.getClassLoader());
-        this.wallet = in.readParcelable(WalletBean.class.getClassLoader());
         this.currency = (IntegrationBean) in.readSerializable();
         this.extra = in.readParcelable(UserInfoExtraBean.class.getClassLoader());
         this.verified = in.readParcelable(VerifiedBean.class.getClassLoader());

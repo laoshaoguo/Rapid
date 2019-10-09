@@ -145,8 +145,8 @@ public class ImageUtils {
         Glide.with(imageView.getContext())
                 .load(cover)
 //                .signature(new StringSignature(String.valueOf(mCoverSigture)))
-                .placeholder(R.mipmap.default_pic_personal)
-                .error(R.mipmap.default_pic_personal)
+                .placeholder(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_launcher)
                 .into(imageView);
     }
 

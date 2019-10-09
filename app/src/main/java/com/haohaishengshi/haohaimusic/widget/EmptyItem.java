@@ -16,7 +16,7 @@ public abstract class EmptyItem<T> implements ItemViewDelegate<T> {
 
     @Override
     public int getItemViewLayoutId() {
-        return R.layout.item_dynamic_detail_comment_empty;
+        return R.layout.item_comment_empty;
     }
 
     @Override

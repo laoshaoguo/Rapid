@@ -2,9 +2,6 @@ package com.haohaishengshi.haohaimusic.data.beans;
 
 import org.greenrobot.greendao.test.AbstractDaoTestLongPk;
 
-import com.haohaishengshi.haohaimusic.data.beans.MusicAlbumListBean;
-import com.haohaishengshi.haohaimusic.data.beans.MusicAlbumListBeanDao;
-
 public class MusicAlbumListBeanTest extends AbstractDaoTestLongPk<MusicAlbumListBeanDao, MusicAlbumListBean> {
 
     public MusicAlbumListBeanTest() {

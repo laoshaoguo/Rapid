@@ -43,13 +43,6 @@
     <string name="code_1099">@string/auth_fail_relogin</string>
     <string name="auth_fail_relogin">你的账号已过期,请重新登录!</string>
 
-
-    <!--音乐FM-->
-    <string name="music_fm">音乐FM</string>
-    <string name="single_music">单曲</string>
-    <string name="music_album">专辑</string>
-    <string name="music_lyric">暂无歌词</string>
-
     <!--代码中的string-->
     <string name="token_expiers">token过期，请重新登陆</string>
     <string name="share">分享</string>

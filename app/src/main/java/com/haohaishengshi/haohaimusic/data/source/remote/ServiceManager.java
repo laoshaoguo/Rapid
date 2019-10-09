@@ -20,7 +20,6 @@ public class ServiceManager {
 //    private PasswordClient mPasswordClient;
 //    private UserInfoClient mUserInfoClient;
 //    private ChatInfoClient mChatInfoClient;
-    private MusicClient mMusicClient;
 //    private InfoMainClient mInfoMainClient;
 //    private FollowFansClient mFollowFansClient;
 //    private DynamicClient mDynamicClient;
@@ -46,7 +45,6 @@ public class ServiceManager {
 //            , PasswordClient passwordClient
 //            , UserInfoClient userInfoClient
 //            , ChatInfoClient chatInfoClient
-            , MusicClient musicClient
 //            , InfoMainClient infoMainClient
 //            , FollowFansClient followFansClient
 //            , DynamicClient mDynamicClient
@@ -66,7 +64,6 @@ public class ServiceManager {
 //        this.mUserInfoClient = userInfoClient;
 //        this.mChatInfoClient = chatInfoClient;
 //        this.mPasswordClient = passwordClient;
-        this.mMusicClient = musicClient;
 //        this.mInfoMainClient = infoMainClient;
 //        this.mFollowFansClient = followFansClient;
 //        this.mDynamicClient = mDynamicClient;
@@ -107,9 +104,6 @@ public class ServiceManager {
 //        return mPasswordClient;
 //    }
 //
-    public MusicClient getMusicClient() {
-        return mMusicClient;
-    }
 //
 //    public InfoMainClient getInfoMainClient() {
 //        return mInfoMainClient;

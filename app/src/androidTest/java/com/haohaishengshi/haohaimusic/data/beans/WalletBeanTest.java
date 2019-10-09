@@ -2,9 +2,6 @@ package com.haohaishengshi.haohaimusic.data.beans;
 
 import org.greenrobot.greendao.test.AbstractDaoTestLongPk;
 
-import com.haohaishengshi.haohaimusic.data.beans.WalletBean;
-import com.haohaishengshi.haohaimusic.data.beans.WalletBeanDao;
-
 public class WalletBeanTest extends AbstractDaoTestLongPk<WalletBeanDao, WalletBean> {
 
     public WalletBeanTest() {

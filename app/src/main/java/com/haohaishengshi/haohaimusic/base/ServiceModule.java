@@ -3,7 +3,6 @@ package com.haohaishengshi.haohaimusic.base;
 
 
 import com.haohaishengshi.haohaimusic.data.source.remote.CommonClient;
-import com.haohaishengshi.haohaimusic.data.source.remote.MusicClient;
 
 import javax.inject.Singleton;
 
@@ -75,20 +74,4 @@ public class ServiceModule {
 //    RegisterClient provideRegisterClient(Retrofit retrofit) {
 //        return retrofit.create(RegisterClient.class);
 //    }
-
-    /**
-     * 音乐FM
-     *
-     * @param retrofit 网络框架
-     * @return
-     */
-    @Singleton
-    @Provides
-    MusicClient provideMusicClient(Retrofit retrofit) {
-        return retrofit.create(MusicClient.class);
-    }
-
-
-
-
 }
